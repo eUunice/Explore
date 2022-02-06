@@ -1,0 +1,256 @@
+/* @import url('reset.css'); */
+@import url('logonav.css');
+@import url('footer.css');
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+.wapper{
+    min-height: 100%;
+    margin: 0;
+}
+
+/* -----------top-------------- */
+.topname{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding:30px 0 100px;
+}
+
+.topname img{
+    width: 100%;
+}
+
+.toptite2 {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 50px;
+}
+
+.topic{
+    display: flex;
+    flex-grow: 1;
+}
+
+.toptite{
+    display: flex;
+    flex-grow: 2;
+    width: 160px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.toptite h1{
+    width: 120px;
+    border-bottom: 2px dashed;
+    font-size: 30px;
+}
+/* topend-------- */
+
+
+/* -----------圖片區-------- */
+main{
+    width: 100%;
+    display: block;
+}
+
+
+.everyootd{
+    width: 1440px;
+    /* margin: auto; */
+}
+
+.otd_left1 ul{
+    display: flex;
+    width: 1000px;
+    overflow: hidden;
+}
+
+.otd_left1 li{
+    flex-shrink: 1;
+    width: 500px;
+    height: 500px;
+}
+
+.otd_left1{
+    /* overflow: hidden; */
+    
+}
+
+
+
+/* 倫波 */
+.everyootd img{
+    width: 100%;
+    display: block;
+}
+
+.bigpic img{
+    width: 1000px;
+}
+
+.bigpic{
+    padding:80px 0;
+}
+
+.bigpic ul{
+    display: flex;
+    justify-content: center;
+}
+
+.bigpic ul:nth-child(1){
+    align-items: center;
+}
+
+/* 倫波end */
+
+.pic2{
+    /* width: 100%; */
+}
+
+.pic3{
+    /* width: 100%; */
+}
+
+.pic2 img{
+    /* display: flex;
+    justify-content: flex-end; */
+    /* position: relative;
+    z-index: 1;
+    left: 10%; */
+    display: block;
+}
+
+.pic3{
+    justify-content: flex-start;
+    display: flex;
+}
+/* .pic2{
+    z-index: 2;
+} */
+.subemiddle{
+    margin: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    display: flex;
+    padding: 0 120px;
+    padding-bottom: 80px;
+}
+
+.subemiddle h2{
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.pic3 , .pic2{
+    margin: 0 10px;
+}
+/*  */
+
+/* more */
+.seemore{
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.moretit h1{
+    text-align: center;
+    border-bottom: 2px dashed;
+    width: 200px;
+    margin: auto;
+}
+
+.aboutman{
+    display: flex;
+    
+    background-color: #292929;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.manpiture ul{
+    display: flex;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.manpiture li{
+    padding-right: 20px;
+    
+}
+
+.manpiture img{
+    width: 300px;
+}
+
+
+
+
+
+.manpiture h3:hover{
+    opacity: 1;
+    
+} 
+
+
+
+
+
+.manpiture{
+    /* background-size: 100%; */
+    /* position: relative; */
+}
+
+.manpiture h3{
+    font-size: 26px;
+    color: #FFFFF3;
+
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    opacity: .8;
+}
+
+/*  */
+
+
+.everyootd ul{
+    display: flex;
+}
+
+.everyootd li{
+    /* margin: 20px; */
+    align-self: center;
+}
+
+
+
+
+/* page */
+/* .page{
+    padding-top: 20px;
+    font-size: 22px;
+}
+
+.page img:hover{
+    color: burlywood;
+} */

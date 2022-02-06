@@ -1,0 +1,285 @@
+@import url('footer.css');
+@import url('logonav.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* font-family: 'Baskervville', serif; */
+}
+
+html, body{
+    height: 100%;
+}
+
+body img{
+    display: block;
+}
+
+.wapper{
+    min-height: 100%;
+    margin: 0;
+}
+
+
+/* ------------------------- */
+.topname{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding:30px 0 100px;
+}
+
+.topname img{
+    width: 100%;
+}
+
+.toptite {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+
+}
+
+.topic{
+    display: flex;
+    flex-grow: 1;
+}
+
+.toptite2{
+    display: flex;
+    flex-grow: 1;
+    width: 200px;
+    align-items: center;
+}
+
+.toptite2 h3{
+    width: 150px;
+    padding: 30px 0px 0px 10px;
+    border-bottom: 2px dashed;
+    font-size: 30px;
+}
+/* 奢華end-------- */
+
+main h1{
+    border-bottom: 2px dashed;
+    color: #1A3E9A;
+}
+
+main h1:hover{
+    color: #DEB887;
+}
+
+
+main h2, main a{
+    color: #292929;
+}
+/* cheang color */
+.dressing_right a:hover .perfum_right a:hover{
+    filter: hue-rotate(160deg);
+
+}
+
+.dressing_right a:hover , .perfum_right a:hover{
+    color: #888098;
+    filter: hue-rotate(120deg);
+}
+
+/*  */
+
+.dressing{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    padding: 0 60px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.dressing img{
+    width: 100%;
+}
+
+.dressing_lef{
+    display: flex; 
+}
+
+
+.ri1-ho_1 , .ri2-ho_1 , .ri3-ho_1{
+    display: flex;
+}
+
+
+.dressing_right{
+    padding-left: 25px;
+}
+
+.word1 , .word2 , .word3{
+    display: flex;
+    align-items: center;
+    margin: 0 0px 0px 5px;
+    word-break: break-all;
+}
+
+.dressing_right a{
+    font-size: 24px;
+    width: 160px;
+}
+
+
+.dresstitle{
+    width: 100%;
+    display: flex;
+}
+
+.dressing_right li{
+    padding-bottom: 20px;
+}
+
+.leftcont{
+    padding-bottom: 20px;
+}
+
+/*--------start化妝-------------------*/
+
+.cosmetics{
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 100%; */
+    justify-content: center;
+    background-color: #7C7C7C;
+    margin: 100px 0 10px;
+}
+
+video{
+    width: 100%;
+    height: 700px;
+    padding-bottom: 30px;
+}
+
+.beautytitle{
+    display: flex;
+    padding-bottom: 20px;
+    width: 1440px;
+    padding: 0 60px 20px 60px;
+}
+/* video end */
+
+.comteic2picwarpper , .comteic3picwarpper{
+    display: flex;
+    margin: auto;
+    width: 1440px;
+    padding: 0 60px;
+}
+
+.comteic2 , .comteic3{
+    display: flex;
+    width: 100%;
+}
+
+.comteic2 img , .comteic3 img{
+    width: 100%;
+}
+
+.comteic2 ul , .comteic3 ul{
+    display: flex;
+    margin: auto;
+}
+
+.comteic2 li , .comteic3 li{
+    padding: 10px;
+}
+
+.comteic2 , .comteic3  h4{
+    font-size: 22px;
+    word-break: break-all;
+} 
+
+
+
+/* --------------------------man */
+
+.aboutman{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+    justify-content: flex-end;
+    background-color: #FFFFF3;
+    margin: 100px 0px;
+    width: 100%;
+}
+
+.dresstitle , .perfumetitle{
+    padding-bottom: 20px;
+}
+
+
+.aboutman_banner{
+    display: flex;
+    /* width: 1440px; */
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 0 0 0 30px;
+}
+
+.man_banner{
+    padding-bottom: 20px;
+}
+.manpiture img{
+    width: 100%;
+}
+
+
+
+
+/* ----------------香氣 */
+.perfume{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    padding: 0 60px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.perfume img{
+    width: 100%;
+}
+
+.perfum_right a{
+    font-size: 24px;
+    width: 160px;
+}
+
+.perfum_right{
+    padding-left: 20px;
+}
+
+.smel_righpice , .smel_miedpice , .smel_3pice{
+    display: flex;
+}
+
+.sme_content , .sme_content2 , .sme_content3{
+    display: flex;
+    align-items: center;
+    margin: 0 0px 0px 5px;
+}
+
+
+.perfumetitle{
+    display: flex;
+    width: 100%;
+}
+
+.perfum_right li{
+    margin-bottom: 20px;
+}
+
+.smellcont{
+    margin-bottom: 20px;
+}

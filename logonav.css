@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* -------LOGO ---------*/
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 0px 20px;
+}
+
+header img{
+    width: 150px;
+    height: 150px;
+}
+
+
+/* -------主選單------- */
+nav{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    font-weight: bold;
+    z-index: 9;
+}
+
+nav ul{
+    /* background-color: transparent;       */
+    margin: 0 auto ;
+    background-color: white;
+    box-shadow: 0 0 15px 20px white;
+    /* margin-top: -1px; */
+    display: flex;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+nav ul>li{
+    position: relative;
+}
+
+nav ul>li>a{
+    display: block;
+    text-align: center;
+    color: #888098;
+    line-height: 55px;
+}
+
+nav ul>li>a:hover{
+    color: burlywood;
+}
+
+nav a{
+    text-decoration: none;
+    /* width: 100px; */
+    font-size: 16px;  
+    padding: 0 10px;
+}
+

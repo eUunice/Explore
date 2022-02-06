@@ -1,0 +1,255 @@
+@import url('footer.css');
+@import url('logonav.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+body img{
+    display: block;
+}
+
+.wapper{
+    min-height: 100%;
+    margin: 0;
+}
+
+/* ------------------------- */
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+.topbanner{
+    width: 100%;
+    height: 100%;
+    color: #FAFAEC;
+}
+
+.travel{
+    background-image: url('./img/travel/pexels-pixabay-41949.jpg');
+    width: 100%;
+    background-size: cover;
+    height: 550px;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 12;
+    top: 0;
+    /* position: absolute; */
+}
+
+.toptite{
+    top: 58%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.toptite2{
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 30px 0px 0px 10px;
+    border-bottom: 2px dashed;
+    
+}
+
+
+.color-1{
+    background-color: #292929;
+    text-align: center;
+    height: 100px;
+}
+
+.color-1 h1{
+    line-height: 100px;
+    color: #FAFAEC;
+}
+
+.topbanner{
+    width: 100%;
+    height: 100%;
+}
+
+.color-trave2{
+    background-image: url('./img/travel/pexels-pixabay-41949.jpg');
+    width: 100%;
+    background-size: cover;
+    height: 200px;
+    background-position: bottom;
+    background-attachment: fixed;
+    top: 0;
+    /* position: absolute; */
+}
+
+.color-taiwan{
+    background-color: #FAFAEC;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+
+
+.taiwan1{
+    background-image: url('./img/travel/pexels-timo-volz-1717859.jpg');
+    width: 100%;
+    background-size: cover;
+    height: 400px;
+    background-position-x: left;
+    background-attachment: fixed;
+    top: 0;
+    /* position: absolute; */
+    position: relative;
+}
+
+.tai_word{
+    display: block;
+    top:50%;
+    right: 30%;
+    position: absolute;
+    position: sticky;
+    height: 120px;
+}
+
+
+
+.tai_word a:hover{
+    border-radius: 50%;
+    color: #292929;
+    display: block;
+    height: 120px;
+    width: 120px;
+    background-color: #FAFAEC;
+}
+
+.tai_word a{
+    text-align: center;
+    height: 120px;
+    width: 120px; 
+
+    background-color: black;
+    color: blanchedalmond;
+    line-height: 55px;
+    font-size: 24px;
+
+    top:50%;
+    right: 20%;
+    position: absolute;
+    transform: translate(70%,-50%); 
+}
+
+
+.africa1{
+    background-image: url('./img/travel/pexels-pixabay-59989.jpg');
+    width: 100%;
+    background-size: cover;
+    height: 400px;
+    background-position-x: left;
+    background-attachment: fixed;
+    top: 0;
+    /* position: absolute; */
+    position: relative;
+}
+
+.color-africa{
+    background-color: #FAFAEC;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+/*--------- u s a---- */
+.usa1{
+    background-image: url('./img/travel/pexels-pixabay-290386.jpg');
+    width: 100%;
+    background-size: cover;
+    height: 400px;
+    background-position-x: left;
+    background-attachment: fixed;
+    top: 0;
+    /* position: absolute; */
+    position: relative;
+}
+
+.color-usa{
+    background-color: #FAFAEC;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+
+.usa_word{
+    display: block;
+    top:50%;
+    right: 30%;
+    position: absolute;
+    position: sticky;
+    height: 120px;
+}
+
+.usa_word a:hover{
+    border-radius: 50%;
+    color: #292929;
+    display: block;
+    height: 120px;
+    width: 120px;
+    background-color: #FAFAEC;
+}
+
+.usa_word a{
+    text-align: center;
+    height: 120px;
+    width: 120px; 
+
+    background-color: black;
+    color: blanchedalmond;
+    line-height: 55px;
+    font-size: 22px;
+
+    top:50%;
+    right: 20%;
+    position: absolute;
+    transform: translate(70%,-50%); 
+}
+
+/* ------------歐歐歐歐歐 ------- */
+.europe1{
+    background-image: url('./img/travel/pexels-yovan-verma-2082103.jpg');
+    width: 100%;
+    background-size: cover;
+    height: 400px;
+    background-position-x: left;
+    background-attachment: fixed;
+    top: 0;
+    /* position: absolute; */
+    position: relative;
+}
+
+.color-europe{
+    background-color: #FAFAEC;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+
+
+
+/* -------change color -----------*/
+.usa1 , .taiwan1 , .africa1 , .europe1{
+    filter: saturate(20%);
+}
+
+.usa1:hover , .taiwan1:hover , .africa1:hover , .europe1:hover{
+    filter: saturate(100%);
+    transition: .5s .1s;
+}
+

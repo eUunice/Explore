@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/* -------LOGO ---------*/
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 0px 20px;
+    z-index: 1111;
+    /* position: absolute; */
+}
+
+header img{
+    width: 150px;
+    height: 150px;
+}
+
+/* ---------main*/
+
+main{
+    width: 100%;
+}
+.bb{
+    width: 100%;
+    display: flex;
+}
+
+.banner{
+    justify-content: center;
+    display: flex;
+    /* width: 1440px; */
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+
+.banner img{
+    display: block;
+}
+
+
+
+.banner2 , .banner3 , .banner4{
+    margin: 0 10px 0px 0px;
+    filter: saturate(40%);
+    
+}
+
+.banner1{
+    margin: 0 10px 0 0;
+    filter: saturate(130%);
+}
+
+.banner2 , .banner4 , .banner5{
+    filter: saturate(120%);
+}
+
+.banner1:hover , .banner2:hover , .banner4:hover , .banner5:hover{
+    filter: saturate(40%);
+    transition: .3s ;
+}
+
+.banner3:hover{
+    filter: saturate(100%);
+    transition: .3s ;
+}
+
+
+.banner h2{
+    font-size: 28px;
+    color: #FFFFF3;
+
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    opacity: .8;
+}
+
+/* .banner h2:hover{
+    opacity: 1;
+    
+} */
+
+
+/* .banner h2:after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #FFFFF3;
+    transition: .5s .2s;
+    margin: 0 auto;
+}
+
+.banner:hover h2::after{
+    width: 50%;
+} */
+
+

@@ -1,0 +1,224 @@
+@import url('footer.css');
+@import url('logonav.css');
+
+
+html, body{
+    height: 100%;
+}
+
+.wapper{
+    min-height: 100%;
+    margin: 0;
+}
+
+
+
+
+/*------ 美食選單----- */
+.foodsel ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.foodsel{
+    padding: 100px 0px 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+.foodsel li{
+    margin: 20px;
+    text-align: center;
+    line-height: 50px;
+    outline-style: double;
+    
+    width: 100px;
+    height: 50px;
+    position: relative;
+}
+
+.foodsel a{
+    display: block;
+    color: #292929;
+}
+
+.foodsel a:hover{
+    outline-style: groove;
+}
+
+
+
+/* -----------美食部位-------- */
+.foodout{
+    display: flex;
+    flex-direction: column;
+}
+
+.fooodout_waper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+main{
+    margin: 0 auto; 
+}
+ 
+.foodout img{
+    width: 100%;
+    display: block;
+}
+
+
+.north_1 , .north_2{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.foodout h2{
+    font-size: 24px;
+    color: black;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    
+}
+
+    
+.foodout a{
+    display: block;
+    /* width: 230px; */
+    /* height: 200px; */
+    
+    position: relative;
+}
+
+
+.foodout2 img{
+    width: 100%;
+    display: block;
+}
+
+.central{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.foodout2{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.central h2{
+    font-size: 24px;
+    color: black;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    
+}
+
+    
+.central a{
+    display: block;
+    position: relative;
+}
+
+.central_2{
+    display: flex;
+    justify-content: center;
+}
+
+.central_2 h2{
+    font-size: 24px;
+    color: black;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);   
+}
+
+.fooodout_waper h2{
+    color: #FFFFF3;
+}
+
+.fooodout_waper h2:hover{
+    color: burlywood;
+}
+
+    
+.central_2 a{
+    display: block;
+    position: relative;
+}
+
+
+.central_3 a{
+    display: block;
+    position: relative;
+}
+
+.central_3 h2{
+    font-size: 24px;
+    color: #FFFFF3;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    
+}
+
+.central_3{
+    display: flex;
+    justify-content: center;
+}
+
+.foodou3 a{
+    display: block;
+    position: relative;
+}
+
+.foodou3 h2{
+    font-size: 24px;
+    color: #FFFFF3;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+}
+
+
+.foodou3{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+}
+
+.foodou3 img{
+    width: 100%;
+    display: block;
+}
+
+.south_2 , .south_3 , .south_4{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
