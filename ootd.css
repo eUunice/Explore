@@ -84,10 +84,7 @@ main{
     height: 500px;
 }
 
-.otd_left1{
-    /* overflow: hidden; */
-    
-}
+
 
 
 
@@ -116,13 +113,7 @@ main{
 
 /* 倫波end */
 
-.pic2{
-    /* width: 100%; */
-}
 
-.pic3{
-    /* width: 100%; */
-}
 
 .pic2 img{
     /* display: flex;
@@ -213,10 +204,7 @@ main{
 
 
 
-.manpiture{
-    /* background-size: 100%; */
-    /* position: relative; */
-}
+
 
 .manpiture h3{
     font-size: 26px;
