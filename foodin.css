@@ -1,14 +1,16 @@
-/* @import url('reset.css'); */
 @import url('logonav.css');
+@import url('footer.css');
 
 html, body{
     height: 100%;
 }
 
 
-.wapper{
+main{
     min-height: 100%;
-    margin: 0;
+    width: 100%;
+    display: block;
+
 }
 
 
@@ -46,7 +48,7 @@ html, body{
 }
 
 .foodtitle{
-    padding: 0px 0px 60px;
+    padding: 0px 0px 30px;
     display: block;
     margin: 0 auto;
 }
@@ -58,15 +60,8 @@ html, body{
 
 
 /* -----------美食地圖-------- */
-main{
-    max-width: 100%;
-    padding: 0 0  60px;
-    display: block;
-}
-article{
-   margin: 0 auto; 
-   width: 100%;
-}
+
+
 
 .allfoodwarpper{
     max-width: 1200px;
@@ -77,7 +72,7 @@ article{
     width: 100%;
 }
 
-article img{
+.allfoodwarpper img{
     width: 100%;
 }
 
@@ -87,14 +82,14 @@ section{
     align-self: center;
 }
 
-article h2{
+.allfoodwarpper h2{
     font-size: 26px;
     color: #292929;
     text-align: center;
 
 }
 
-article h3{
+.allfoodwarpper h3{
     font-size: 18px;
     color: #292929;
     text-align: center;
@@ -104,7 +99,7 @@ article h3{
 
 
 
-article p{
+.allfoodwarpper p{
     font-size: 16px;
     color: #7C7C7C;
     word-break: keep-all;
@@ -198,82 +193,3 @@ section{
     padding-top: 20px;
 }
 
-
-
-
-
-/* -----------footer------------ */
-footer{
-    margin-top: 0;
-    background-color: #888098;
-    height: 120px;
-    width: 100%;
-    z-index: 99;
-    position: fixed;
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-}
-
-footer h1,footer a{
-    font-size: 18px;
-    line-height: 1.2;
-}
-
-footer a{
-    font-size: 20px;
-    color: #FFFFF3;
-}
-
-footer a:hover{
-    
-    color: burlywood;
-}
-
-.join{
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-footer li{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-
-.follow{
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.foot_right{
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.foot_logo img{
-    width: 200px;
-    display:flex;
-    flex-grow: 1;
-    align-content: center;
-}
-
-.foote_p{
-    height: 20px;
-}
-
-
-.foot1{
-    height: 20px;
-}

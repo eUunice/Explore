@@ -1,26 +1,15 @@
 @import url('footer.css');
 @import url('logonav.css');
 
-*{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    box-sizing: border-box;
-    text-decoration: none;
-    /* font-family: 'Baskervville', serif; */
-}
-
 html, body{
     height: 100%;
 }
 
-body img{
-    display: block;
-}
 
-.wapper{
+main{
     min-height: 100%;
-    margin: 0;
+    width: 100%;
+    display: block;
 }
 
 

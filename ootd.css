@@ -1,4 +1,3 @@
-/* @import url('reset.css'); */
 @import url('logonav.css');
 @import url('footer.css');
 *{
@@ -14,9 +13,13 @@ html, body{
 }
 
 
-.wapper{
+
+
+main{
     min-height: 100%;
     margin: 0;
+    width: 100%;
+    display: block;
 }
 
 /* -----------top-------------- */
@@ -61,10 +64,7 @@ html, body{
 
 
 /* -----------圖片區-------- */
-main{
-    width: 100%;
-    display: block;
-}
+
 
 
 .everyootd{

@@ -6,9 +6,10 @@ html, body{
     height: 100%;
 }
 
-.wapper{
+.main{
     min-height: 100%;
     margin: 0;
+    width: 100%;
 }
 
 
@@ -60,9 +61,6 @@ html, body{
     margin: 0 auto;
 }
 
-main{
-    margin: 0 auto; 
-}
  
 .foodout img{
     width: 100%;
