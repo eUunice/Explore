@@ -71,7 +71,7 @@ nav a:after{
     width: 0%;
     height: 1.5px;
     background-color: #DEB887;
-    transition: .5s .2s;
+    transition: .5s;
     margin: 0 auto;
     position: absolute;
     bottom: 15px;
@@ -87,3 +87,86 @@ nav a:hover:after{
 nav a{
     position: relative;
 }
+
+
+
+/* -----------footer------------ */
+.foot1{
+    background-color: #888098;
+    height: 120px;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.foot1 h1 , .foot1 a{
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.foot1 a{
+    font-size: 20px;
+    color: #FFFFF3;
+}
+
+.foot1 a:hover{
+    
+    color: burlywood;
+}
+
+.join{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot1 li{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.follow{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.foot_right{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot_logo img{
+    width: 200px;
+    display:flex;
+    flex-grow: 1;
+    align-content: center;
+}
+
+.foote_p{
+    height: 20px;
+    margin-top: 0;
+    background-color: #888098;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    position: relative;
+    text-align: center;
+}
+
+

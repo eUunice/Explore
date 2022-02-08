@@ -1,16 +1,9 @@
-@import url('logonav.css');
-@import url('footer.css');
-
-html, body{
-    height: 100%;
-}
+@import url('logonavfot.css');
 
 
 main{
     min-height: 100%;
     width: 100%;
-    display: block;
-
 }
 
 

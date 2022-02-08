@@ -1,25 +1,13 @@
-@import url('logonav.css');
-@import url('footer.css');
-*{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    box-sizing: border-box;
-    text-decoration: none;
-}
+@import url('logonavfot.css');
 
 html, body{
-    height: 100%;
+    /* height: 100%; */
 }
-
-
 
 
 main{
     min-height: 100%;
-    margin: 0;
     width: 100%;
-    display: block;
 }
 
 /* -----------top-------------- */
@@ -88,7 +76,7 @@ main{
 
 
 
-/* 倫波 */
+/* 待輪播 */
 .everyootd img{
     width: 100%;
     display: block;
@@ -111,7 +99,7 @@ main{
     align-items: center;
 }
 
-/* 倫波end */
+/* 輪播end */
 
 
 
@@ -128,9 +116,8 @@ main{
     justify-content: flex-start;
     display: flex;
 }
-/* .pic2{
-    z-index: 2;
-} */
+
+
 .subemiddle{
     margin: auto;
     display: flex;
@@ -164,9 +151,14 @@ main{
     border-bottom: 2px dashed;
     width: 200px;
     margin: auto;
+    color: #1A3E9A;
 }
 
-.aboutman{
+.moretit h1:hover{
+    color: #DEB887;
+}
+
+.aboutootd{
     display: flex;
     
     background-color: #292929;
@@ -176,26 +168,23 @@ main{
     padding-top: 10px;
 }
 
-.manpiture ul{
+.ootdpiture ul{
     display: flex;
     padding-bottom: 5px;
     padding-top: 10px;
 }
 
-.manpiture li{
+.ootdpiture li{
     padding-right: 20px;
     
 }
 
-.manpiture img{
+.ootdpituree img{
     width: 300px;
 }
 
 
-
-
-
-.manpiture h3:hover{
+.ootdpiture h3:hover{
     opacity: 1;
     
 } 
@@ -203,10 +192,7 @@ main{
 
 
 
-
-
-
-.manpiture h3{
+/* .ootdpiture h3{
     font-size: 26px;
     color: #FFFFF3;
 
@@ -216,20 +202,7 @@ main{
     transform:translate(-50%,-50%);
     text-align: center;
     opacity: .8;
-}
-
-/*  */
-
-
-.everyootd ul{
-    display: flex;
-}
-
-.everyootd li{
-    /* margin: 20px; */
-    align-self: center;
-}
-
+} */
 
 
 

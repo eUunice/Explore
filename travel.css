@@ -1,13 +1,4 @@
-@import url('footer.css');
-@import url('logonav.css');
-
-*{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    box-sizing: border-box;
-    text-decoration: none;
-}
+@import url('logonavfot.css');
 
 html, body{
     height: 100%;

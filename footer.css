@@ -1,8 +1,7 @@
 
 
 /* -----------footer------------ */
-footer{
-    margin-top: 0;
+.foot1{
     background-color: #888098;
     height: 120px;
     width: 100%;
@@ -12,19 +11,21 @@ footer{
 
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+    
 }
 
-footer h1,footer a{
+.foot1 h1 , .foot1 a{
     font-size: 18px;
     line-height: 1.2;
 }
 
-footer a{
+.foot1 a{
     font-size: 20px;
     color: #FFFFF3;
 }
 
-footer a:hover{
+.foot1 a:hover{
     
     color: burlywood;
 }
@@ -37,7 +38,7 @@ footer a:hover{
     justify-content: center;
 }
 
-footer li{
+.foot1 li{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -69,10 +70,13 @@ footer li{
 
 .foote_p{
     height: 20px;
+    margin-top: 0;
+    background-color: #888098;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    position: relative;
+    text-align: center;
 }
 
 
-.foot1{
-    height: 20px;
-    margin-top: 100px;
-}

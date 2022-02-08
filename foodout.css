@@ -1,18 +1,11 @@
-@import url('footer.css');
-@import url('logonav.css');
+@import url('logonavfot.css');
 
 
-html, body{
-    height: 100%;
-}
 
 .main{
     min-height: 100%;
-    margin: 0;
     width: 100%;
 }
-
-
 
 
 /*------ 美食選單----- */
@@ -90,9 +83,6 @@ html, body{
     
 .foodout a{
     display: block;
-    /* width: 230px; */
-    /* height: 200px; */
-    
     position: relative;
 }
 

@@ -59,7 +59,7 @@ main{
 }
 
 .banner2 , .banner4 , .banner5{
-    filter: saturate(120%);
+    filter: saturate(130%);
 }
 
 .banner1:hover , .banner2:hover , .banner4:hover , .banner5:hover{
@@ -68,7 +68,7 @@ main{
 }
 
 .banner3:hover{
-    filter: saturate(100%);
+    filter: saturate(120%);
     transition: .3s ;
 }
 
@@ -90,7 +90,6 @@ main{
     opacity: 1;
     
 } */
-
 
 /* .banner h2:after{
     content: "";
