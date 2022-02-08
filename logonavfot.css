@@ -21,7 +21,7 @@ header img{
 
 
 /* -------主選單------- */
-nav{
+.allnav{
     width: 100%;
     text-align: center;
     display: flex;
@@ -31,41 +31,37 @@ nav{
     z-index: 9;
 }
 
-nav ul{
+.allnav ul{
     /* background-color: transparent;       */
     margin: 0 auto ;
     background-color: white;
     box-shadow: 0 0 15px 20px white;
     /* margin-top: -1px; */
     display: flex;
-    top: 0;
     width: 100%;
     justify-content: center;
     
 }
 
-nav li{
+.allnav li{
     position: relative;
 }
 
-nav ul>li>a{
-    display: block;
+.allnav ul > li >a{
     text-align: center;
     color: #888098;
     line-height: 55px;
-}
-
-nav ul>li>a:hover{
-    color: burlywood;
-}
-
-nav a{
-   
     font-size: 16px;  
     padding: 0 10px;
 }
 
-nav a:after{
+.allnav a:hover{
+    color: burlywood;
+}
+
+
+
+.allnav a:after{
     content: "";
     display: block;
     width: 0%;
@@ -79,21 +75,18 @@ nav a:after{
     right: 0;
 }
 
-nav a:hover:after{
+.allnav a:hover:after{
     width: 80%;
 }
 
 
-nav a{
-    position: relative;
-}
 
 
 
 /* -----------footer------------ */
 .foot1{
     background-color: #888098;
-    height: 120px;
+    height: 130px;
     width: 100%;
     z-index: 99;
     position: fixed;
@@ -116,7 +109,6 @@ nav a{
 }
 
 .foot1 a:hover{
-    
     color: burlywood;
 }
 
@@ -152,7 +144,7 @@ nav a{
 }
 
 .foot_logo img{
-    width: 200px;
+    width: 250px;
     display:flex;
     flex-grow: 1;
     align-content: center;
