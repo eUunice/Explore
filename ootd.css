@@ -7,6 +7,11 @@ main{
     width: 100%;
 }
 
+body img{
+    display: block;
+}
+
+
 /* -----------top-------------- */
 .topname{
     width: 100%;
@@ -48,32 +53,41 @@ main{
 /* topend-------- */
 
 
-/* -----------圖片區-------- */
+/* ----------ht 版面 細節圖-------- */
 
-
-
-.everyootd{
-    width: 1440px;
-    /* margin: auto; */
-}
-
-.otd_left1 ul{
+.htpice{
+    width: 100%;
     display: flex;
-    width: 1000px;
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
-.otd_left1 li{
-    flex-shrink: 1;
-    width: 500px;
-    height: 500px;
+.htpice img{
+    width: 100%;
 }
 
+.smalpic img{
+    width: 100px;
+    
+}
+.smalpic {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.ht_big{
+    margin: 0 20px;
+}
+
+/* .smalpic{
+    display: flex;
+    
+} */
 
 
 
-
-/* 待輪播 */
+/*-- 待輪播 --*/
 .everyootd img{
     width: 100%;
     display: block;
@@ -148,7 +162,7 @@ main{
     border-bottom: 2px dashed;
     width: 200px;
     margin: auto;
-    color: #1A3E9A;
+    color: #4B7CAA;
 }
 
 .moretit h1:hover{
@@ -163,6 +177,7 @@ main{
     justify-content: center;
     padding-bottom: 10px;
     padding-top: 10px;
+    position: relative;
 }
 
 .ootdpiture ul{
@@ -177,7 +192,7 @@ main{
 }
 
 .ootdpituree img{
-    width: 300px;
+    /* width: 300px; */
 }
 
 
@@ -185,6 +200,15 @@ main{
     opacity: 1;
     
 } 
+
+.ootdpiture img{
+    filter: brightness(15%);
+}
+
+.ootdpiture img:hover{
+    filter: brightness(100%);
+}
+
 
 
 

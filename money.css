@@ -53,7 +53,7 @@ main{
 
 main h1{
     border-bottom: 2px dashed;
-    color: #1A3E9A;
+    color: #4b7caa;
 }
 
 main h1:hover{
@@ -65,14 +65,11 @@ main h2, main a{
     color: #292929;
 }
 /* cheang color */
-.dressing_right a:hover .perfum_right a:hover{
-    filter: hue-rotate(160deg);
-
-}
 
 .dressing_right a:hover , .perfum_right a:hover{
     color: #888098;
-    filter: hue-rotate(120deg);
+    /* filter: hue-rotate(120deg); */
+    filter: grayscale(90%);
 }
 
 /*  */
@@ -157,29 +154,44 @@ video{
 /* video end */
 
 .comteic2 , .comteic3{
-    display: flex;
+    /* display: flex; */
     width: 100%;
 }
 
-.comteic2 img , .comteic3 img{
+.comteic2 img{
     width: 100%;
+    
 }
 
-.comteic2 ul , .comteic3 ul{
+.comteic2 ul{
     display: flex;
     margin: auto;
+    width: 1440px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
-.comteic2 li , .comteic3 li{
+.comteic2 li{
     padding: 10px;
+    width: 400px;
+    overflow: hidden;
+
 }
 
-.comteic2 , .comteic3  h4{
+.comteic2 h4{
     font-size: 22px;
     word-break: break-all;
 } 
 
+.comteic2 img:hover{
+    transform: scale(1.2);
 
+}
+
+.comteic2 img{
+    overflow: hidden;
+}
 
 /* --------------------------man */
 

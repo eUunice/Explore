@@ -123,10 +123,75 @@ section{
 .foodie{
     display: flex;
     margin: 50px 0px 50px 0px;
-    justify-content: center;
-    
+    justify-content: center;    
+}
+/* .foodie{
+    background-image: url('./img/food/food1.jpg');
+    width: 300px;
+    height: 480px;
+} */
+
+.foodbeape{
+    background-image: url('./img/food/food1.jpg');
+    width: 130px;
+    height: 480px;
+    background-position: 0%;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    animation:  foodbeape 10s ease-out infinite;
 }
 
+@keyframes foodbeape{
+    0%{
+        transform: translateY(2%);
+    }
+
+    50%{
+        transform: translateY(5%);
+    }
+    100%{
+        transform: translateY(2%);
+    }
+}
+
+
+.foodbeape2{
+    background-image: url('./img/food/food1.jpg');
+    width: 130px;
+    height: 480px;
+    background-position: 50%;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    box-shadow: 3px 5px 8px rgba(0,0,0,0.5);
+    animation:  foodbeape2 10s ease-in-out infinite;
+}
+
+@keyframes foodbeape2{
+    0%{
+        transform: translateY(5%);
+    }
+
+    50%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(5%);
+    }
+}
+
+.foodbeape3{
+    background-image: url('./img/food/food1.jpg');
+    width: 130px;
+    height: 480px;
+    background-position: 100%;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    animation:  foodbeape 20s ease infinite;
+    box-shadow: 3px 5px 8px rgba(0,0,0,0.5);
+   
+}
+/* 第一張介紹end */
 
 .foodie2waper{
     display: flex;
@@ -149,12 +214,45 @@ section{
     justify-content: flex-end;
     display: flex;
     margin: 50px 0px;
-    /* width: 500px; */
-    /* margin: auto; */
     justify-content: center;
 
 
 }
+
+.marais{
+    background-image: url('./img/food/food2.jpg');
+    width: 130px;
+    height: 480px;
+    background-position: 0%;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    box-shadow: 2px 3px 8px rgba(0,0,0,0.5);
+    animation:  foodbeape 10s ease-out infinite;
+}
+
+.marais2{
+    background-image: url('./img/food/food2.jpg');
+    width: 130px;
+    height: 480px;
+    background-position: 50%;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    box-shadow: 2px 3px 8px rgba(0,0,0,0.5);
+    animation:  foodbeape2 10s ease-out infinite;
+}
+
+.marais3{
+    background-image: url('./img/food/food2.jpg');
+    width: 130px;
+    height: 480px;
+    background-position: 100%;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    box-shadow: 3px 5px 8px rgba(0,0,0,0.5);
+    animation:  foodbeape 10s ease-out infinite;
+}
+
+/* 第二張end */
 
 .foodie3waper{
     display: flex;
@@ -179,6 +277,39 @@ section{
     margin: 50px 0px 50px 0px;
     justify-content: center;
 
+}
+
+.buger{
+    background-image: url('./img/food/food3.jpg');
+    width: 130px;
+    height: 480px;
+    background-position: 0%;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    box-shadow: 3px 5px 8px rgba(0,0,0,0.5);
+    animation:  foodbeape 10s ease-out infinite;
+}
+
+.buger2{
+    background-image: url('./img/food/food3.jpg');
+    width: 130px;
+    height: 480px;
+    background-position: 50%;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    box-shadow: 3px 5px 8px rgba(0,0,0,0.5);
+    animation:  foodbeape2 10s ease-out infinite;
+}
+
+.buger3{
+    background-image: url('./img/food/food3.jpg');
+    width: 130px;
+    height: 480px;
+    background-position: 100%;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    box-shadow: 3px 5px 8px rgba(0,0,0,0.5);
+    animation:  foodbeape 10s ease-out infinite;
 }
 
 

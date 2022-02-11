@@ -26,7 +26,6 @@ main{
     height: 550px;
     background-position: center;
     background-attachment: fixed;
-    z-index: 12;
     top: 0;
     /* position: absolute; */
 }
