@@ -11,6 +11,9 @@ body img{
     display: block;
 }
 
+.allnav li:nth-child(2) a{
+    color: burlywood;
+}
 
 /* -----------top-------------- */
 .topname{
@@ -148,7 +151,42 @@ body img{
 .pic3 , .pic2{
     margin: 0 10px;
 }
+
+.middle_left{
+    animation:  left 10s forwards;
+}
+
+@keyframes left{
+
+    0%{
+        opacity: 0;
+        transform: translatex(-5%);
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(5%);
+    }
+}
+
+.middle_right{
+    animation:  right 10s forwards;
+}
+
+@keyframes right{
+
+    0%{
+        opacity: 0;
+        transform: translatex(5%);
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0%);
+    }
+}
+
+
 /*  */
+
 
 /* ---more---- */
 .seemore{
@@ -182,12 +220,14 @@ body img{
 
 .ootdpiture ul{
     display: flex;
-    padding-bottom: 5px;
     padding-top: 10px;
+    width: 1200px;
+    flex-wrap: wrap;
 }
 
 .ootdpiture li{
     padding-right: 20px;
+    padding-bottom: 20px;
     
 }
 
@@ -227,12 +267,3 @@ body img{
 
 
 
-/* page */
-/* .page{
-    padding-top: 20px;
-    font-size: 22px;
-}
-
-.page img:hover{
-    color: burlywood;
-} */

@@ -10,6 +10,9 @@ main{
     width: 100%;
 }
 
+.allnav li:first-child a{
+    color: burlywood;
+}
 
 /* ------------------------- */
 .topname{

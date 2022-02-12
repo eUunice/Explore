@@ -5,7 +5,9 @@ html, body{
     height: 100%;
 }
 
-
+.allnav li:nth-child(3) a{
+    color: burlywood;
+}
 
 /* ---------------------大圖 */
 .sub_bigpic{
