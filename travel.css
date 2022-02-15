@@ -239,3 +239,239 @@ main{
     transition: .5s .1s;
 }
 
+
+
+
+/* -----------R-------W-----D------------ */
+@media screen and (max-width: 575.98px){
+    .europe1 , .taiwan1{
+        background-position: center;
+    }
+
+    .usa1{
+        background-position-x: 70%;
+    }
+
+    .africa1{
+        background-position-x: 30%;
+    }
+    
+    .tai_word a{
+        height: 80px;
+        width: 80px; 
+        line-height: 40px;
+        font-size: 16px;
+        background-color: #292929;
+        color: #FAFAEC;
+    }
+
+    .tai_word{
+        top:60%;
+        right: 20%;
+        position: absolute;
+        position: sticky;
+        height: 80px;
+    }
+
+    .tai_word a:hover{
+        border-radius: 50%;
+        color: #292929;
+        display: block;
+        height: 80px;
+        width: 80px;
+        background-color: #FAFAEC;
+    }
+
+    .usa_word{
+        top:60%;
+        right: 20%;
+        position: absolute;
+        position: sticky;
+        height: 80px;
+    }
+    
+    .usa_word a:hover{
+        border-radius: 50%;
+        color: #292929;
+        display: block;
+        height: 80px;
+        width: 80px;
+        background-color: #FAFAEC;
+    }
+    
+    .usa_word a{
+        height: 80px;
+        width: 80px; 
+    
+        background-color: #292929;
+        color: #FAFAEC;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+    main h1{
+        font-size: 18px;
+    }
+    
+}
+  
+@media (min-width: 576px) and (max-width: 767.98px){
+    .europe1 , .taiwan1{
+        background-position: center;
+    }
+
+    .usa1{
+        background-position-x: right;
+        
+    }
+
+    .africa1{
+        background-position-x: 30%;
+    }
+
+    main h1{
+        font-size: 18px;
+    }
+
+    .tai_word a{
+        height: 80px;
+        width: 80px; 
+        line-height: 40px;
+        font-size: 16px;
+        background-color: #292929;
+        color: #FAFAEC;
+    }
+
+    .tai_word{
+        top:60%;
+        right: 20%;
+        position: absolute;
+        position: sticky;
+        height: 80px;
+    }
+
+    .tai_word a:hover{
+        border-radius: 50%;
+        color: #292929;
+        display: block;
+        height: 80px;
+        width: 80px;
+        background-color: #FAFAEC;
+    }
+
+    .usa_word{
+        top:60%;
+        right: 20%;
+        position: absolute;
+        position: sticky;
+        height: 80px;
+    }
+    
+    .usa_word a:hover{
+        border-radius: 50%;
+        color: #292929;
+        display: block;
+        height: 80px;
+        width: 80px;
+        background-color: #FAFAEC;
+    }
+    
+    .usa_word a{
+        height: 80px;
+        width: 80px; 
+    
+        background-color: #292929;
+        color: #FAFAEC;
+        line-height: 40px;
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .europe1 , .taiwan1{
+        background-position: center;
+    }
+
+    .usa1{
+        background-position-x: 70%;
+        
+    }
+
+    .africa1{
+        background-position-x: 30%;
+    }
+
+    main h1{
+        font-size: 20px;
+    }
+
+    .tai_word a{
+        height: 100px;
+        width: 100px; 
+        line-height: 50px;
+        font-size: 18px;
+        background-color: black;
+        color: blanchedalmond;
+    }
+
+    .tai_word{
+        top:60%;
+        right: 20%;
+        position: absolute;
+        position: sticky;
+        height: 100px;
+    }
+
+    .tai_word a:hover{
+        border-radius: 50%;
+        color: #292929;
+        display: block;
+        height: 100px;
+        width: 100px; 
+        background-color: #FAFAEC;
+    }
+
+    .usa_word{
+        top:60%;
+        right: 20%;
+        position: absolute;
+        position: sticky;
+        height: 100px;
+    }
+    
+    .usa_word a:hover{
+        border-radius: 50%;
+        color: #292929;
+        display: block;
+        height: 100px;
+        width: 100px; 
+        background-color: #FAFAEC;
+    }
+    
+    .usa_word a{
+        height: 100px;
+        width: 100px; 
+    
+        background-color: black;
+        color: blanchedalmond;
+        line-height: 50px;
+        font-size: 18px;
+    }
+}
+  
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .europe1 , .taiwan1{
+        background-position: center;
+    }
+
+    .usa1{
+        background-position-x: 70%;
+        
+    }
+
+    .africa1{
+        background-position-x: 30%;
+    }
+}
+  
