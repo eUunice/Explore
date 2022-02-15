@@ -7,6 +7,9 @@
     width: 100%;
 }
 
+.allnav li:nth-child(4) a{
+    color: burlywood;
+}
 
 /*------ 美食選單----- */
 .foodsel ul{
@@ -52,21 +55,19 @@
 .fooodout_waper{
     width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
  
-.foodout img{
+.foodout img , .foodout2 img , .foodou3 img{
     width: 100%;
     display: block;
 }
 
 
-.north_1 , .north_2{
+.north_1 , .north_2 , .central{
     display: flex;
-    justify-content: center;
 }
-
-
 
 
 .foodout h2{
@@ -87,20 +88,10 @@
 }
 
 
-.foodout2 img{
-    width: 100%;
-    display: block;
-}
 
-.central{
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
 
-}
 
 .foodout2{
-    width: 1200px;
     display: flex;
     flex-direction: column;
 }
@@ -123,9 +114,8 @@
     position: relative;
 }
 
-.central_2{
+.central_2 , .central_3{
     display: flex;
-    justify-content: center;
 }
 
 .central_2 h2{
@@ -142,21 +132,15 @@
     color: #FFFFF3;
 }
 
-.fooodout_waper h2:hover{
-    color: burlywood;
-}
 
     
-.central_2 a{
+.central_2 a , .central_3 a{
     display: block;
     position: relative;
 }
 
 
-.central_3 a{
-    display: block;
-    position: relative;
-}
+
 
 .central_3 h2{
     font-size: 24px;
@@ -169,10 +153,7 @@
     
 }
 
-.central_3{
-    display: flex;
-    justify-content: center;
-}
+
 
 .foodou3 a{
     display: block;
@@ -193,20 +174,69 @@
 .foodou3{
     display: flex;
     flex-direction: column;
-    width: 1200px;
+    /* width: 1200px; */
 }
 
-.foodou3 img{
-    width: 100%;
-    display: block;
-}
+
 
 .south_2 , .south_3 , .south_4{
     display: flex;
     justify-content: center;
 }
 
+.foodout a , .foodout2 a , .foodou3 a{
+    filter: brightness(60%);
+}
+
+.foodout a:hover , .foodout2 a:hover , .foodou3 a:hover{
+    filter: brightness(100%);
+}
 
 
 
+.foodout{
+    z-index: 1;
+}
 
+
+/* ----------RWD------- */
+
+@media screen and (max-width: 575.98px){
+    .fooodout_waper , .foodou3 , .foodout2{
+      width: 100%;
+    }
+    .fooodout_waper h2{
+        font-size: 16px;
+    }
+}
+  
+@media (min-width: 576px) and (max-width: 767.98px){
+    .fooodout_waper , .foodou3 , .foodout2{
+      width: 540px;
+    }
+
+    .fooodout_waper h2{
+        font-size: 18px;
+    }
+}
+  
+@media (min-width: 768px) and (max-width: 991.98px){
+    .fooodout_waper , .foodou3 , .foodout2{
+      width: 720px;
+    }
+    .fooodout_waper h2{
+        font-size: 20px;
+    }
+}
+  
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .fooodout_waper , .foodou3 , .foodout2{
+      width: 960px;
+    }
+}
+  
+@media (min-width: 1200px) and (max-width: 1139.98px){
+    .fooodout_waper , .foodou3 , .foodout2{
+      width:1140px;
+    }
+}
