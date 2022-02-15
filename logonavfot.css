@@ -80,7 +80,6 @@ header img{
 }
 
 
-
 /* -----------footer------------ */
 .foot1{
     background-color: #888098;
@@ -142,7 +141,7 @@ header img{
 }
 
 .foot_logo img{
-    width: 250px;
+    width: 230px;
     display:flex;
     flex-grow: 1;
     align-content: center;
@@ -161,3 +160,48 @@ header img{
 
 
 
+/* ----------RWD------- */
+
+@media screen and (max-width: 575.98px){
+    .foot1{
+      width: 100%;
+    }
+    .foot1 img{
+        display: none;
+    }
+}
+  
+@media (min-width: 576px) and (max-width: 767.98px){
+    .foot1{
+      width: 100%;
+    }
+
+    .foot1 h1{
+        font-size: 18px;
+    }
+    .foot1 img{
+        display: none;
+}
+  
+
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .fooodout_waper , .foodou3 , .foodout2{
+      width: 720px;
+    }
+    .fooodout_waper h2{
+        font-size: 20px;
+    }
+}
+  
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .fooodout_waper , .foodou3 , .foodout2{
+      width: 960px;
+    }
+}
+  
+@media (min-width: 1200px) and (max-width: 1139.98px){
+    .fooodout_waper , .foodou3 , .foodout2{
+      width:1140px;
+    }
+}
