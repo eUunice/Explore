@@ -30,24 +30,28 @@ main{
     background-position: center;
     background-attachment: fixed;
     top: 0;
-    /* position: absolute; */
 }
 
 .toptite{
-    top: 58%;
+    top: 60%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
+    padding: 30px;
 }
 
 .toptite2{
-    top: 60%;
+    top: 70%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
     padding: 30px 0px 0px 10px;
     border-bottom: 2px dashed;
     
+}
+
+.toptite2 h1{
+    font-size: 32px;
 }
 
 
@@ -242,20 +246,35 @@ main{
 
 
 
-/* -----------R-------W-----D------------ */
+/* -----------R-------W-----D------------ */  
 @media screen and (max-width: 575.98px){
-    .europe1 , .taiwan1{
-        background-position: center;
+
+    .travel{
+        height: 500px;
+        background-attachment: local;
+    }
+
+
+    .color-trave2{
+        display: none;
+    }
+
+    /* --travel back-- */
+    .europe1 , .taiwan1 , .africa1{
+        background-position-x: 60%;
+        background-attachment: local;
     }
 
     .usa1{
         background-position-x: 70%;
+        background-attachment: local;
     }
 
-    .africa1{
-        background-position-x: 30%;
+    /* -color -----------*/
+    .usa1 , .taiwan1 , .africa1 , .europe1{
+        filter: saturate(100%);
     }
-    
+
     .tai_word a{
         height: 80px;
         width: 80px; 
@@ -310,27 +329,42 @@ main{
     }
 
     main h1{
-        font-size: 18px;
+        font-size: .8rem;
     }
     
 }
   
-@media (min-width: 576px) and (max-width: 767.98px){
-    .europe1 , .taiwan1{
-        background-position: center;
+@media (min-width: 576px) and (max-width: 991.98px){
+    .travel{
+        height: 500px;
+        background-attachment: local;
+    }
+
+
+    .color-trave2{
+        display: none;
+    }
+
+    
+
+    /* --travel back-- */
+    .europe1 , .taiwan1 , .africa1{
+        background-position-x: 60%;
+        background-attachment: local;
     }
 
     .usa1{
-        background-position-x: right;
-        
+        background-position-x: 70%;
+        background-attachment: local;
     }
 
-    .africa1{
-        background-position-x: 30%;
+    /* -color -----------*/
+    .usa1 , .taiwan1 , .africa1 , .europe1{
+        filter: saturate(100%);
     }
 
     main h1{
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     .tai_word a{
@@ -387,91 +421,4 @@ main{
     }
 }
 
-
-@media (min-width: 768px) and (max-width: 991.98px){
-    .europe1 , .taiwan1{
-        background-position: center;
-    }
-
-    .usa1{
-        background-position-x: 70%;
-        
-    }
-
-    .africa1{
-        background-position-x: 30%;
-    }
-
-    main h1{
-        font-size: 20px;
-    }
-
-    .tai_word a{
-        height: 100px;
-        width: 100px; 
-        line-height: 50px;
-        font-size: 18px;
-        background-color: black;
-        color: blanchedalmond;
-    }
-
-    .tai_word{
-        top:60%;
-        right: 20%;
-        position: absolute;
-        position: sticky;
-        height: 100px;
-    }
-
-    .tai_word a:hover{
-        border-radius: 50%;
-        color: #292929;
-        display: block;
-        height: 100px;
-        width: 100px; 
-        background-color: #FAFAEC;
-    }
-
-    .usa_word{
-        top:60%;
-        right: 20%;
-        position: absolute;
-        position: sticky;
-        height: 100px;
-    }
-    
-    .usa_word a:hover{
-        border-radius: 50%;
-        color: #292929;
-        display: block;
-        height: 100px;
-        width: 100px; 
-        background-color: #FAFAEC;
-    }
-    
-    .usa_word a{
-        height: 100px;
-        width: 100px; 
-    
-        background-color: black;
-        color: blanchedalmond;
-        line-height: 50px;
-        font-size: 18px;
-    }
-}
-  
-@media (min-width: 992px) and (max-width: 1199.98px){
-    .europe1 , .taiwan1{
-        background-position: center;
-    }
-
-    .usa1{
-        background-position-x: 70%;
-        
-    }
-
-    .africa1{
-        background-position-x: 30%;
-    }
-}
   

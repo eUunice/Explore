@@ -59,10 +59,11 @@ body img{
 /* ----------ht 版面 細節圖-------- */
 
 .htpice{
-    width: 100%;
+    width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .htpice img{
@@ -74,20 +75,16 @@ body img{
     
 }
 .smalpic {
-    margin-bottom: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: auto;
 }
 
 .ht_big{
-    margin: 0 20px;
+    margin: auto;
 }
 
-/* .smalpic{
-    display: flex;
-    
-} */
-
+.threepic{
+    margin: auto;
+}
 
 
 /*-- 待輪播 --*/
@@ -96,8 +93,14 @@ body img{
     display: block;
 }
 
+
+.bigpic{
+    width: 1440px;
+    margin: 0 auto;
+}
+
 .bigpic img{
-    width: 1000px;
+    width: 100%;
 }
 
 .bigpic{
@@ -134,12 +137,15 @@ body img{
 
 .subemiddle{
     margin: auto;
-    display: flex;
-    /* justify-content: space-between; */
     justify-content: center;
     display: flex;
-    padding: 0 120px;
+    /* padding: 0 120px; */
     padding-bottom: 80px;
+    width: 1440px;
+}
+
+.subemiddle img{
+    width: 100%;
 }
 
 .subemiddle h2{
@@ -209,7 +215,6 @@ body img{
 
 .aboutootd{
     display: flex;
-    
     background-color: #292929;
     width: 100%;
     justify-content: center;
@@ -231,9 +236,7 @@ body img{
     
 }
 
-.ootdpituree img{
-    /* width: 300px; */
-}
+
 
 
 .ootdpiture h3:hover{
@@ -242,7 +245,9 @@ body img{
 } 
 
 .ootdpiture img{
-    filter: brightness(15%);
+    filter: brightness(50%);
+    width: 100%;
+
 }
 
 .ootdpiture img:hover{
@@ -265,5 +270,115 @@ body img{
     opacity: .8;
 } */
 
+/* ----------RWD------- */
 
+@media screen and (max-width: 575.98px){
+    .htpice , .bigpic , .subemiddle{
+      width: 100%;
+    }
+    
+    .htpice{
+        flex-direction: column-reverse;
+    }
+
+    .threepic{
+        flex-direction: column;
+        order: 3;
+    }
+
+    .smalpic{
+        order: 2;
+        display: flex;
+        padding: 5px;
+    }
+    .ht_big{
+        order: 1;
+    }
+
+     /* -mask- */
+     .subemiddle{
+        flex-direction: column;
+    }
+
+    .pic2{
+        order: 3;
+        margin: 0 -10px;
+        display: none;
+    }
+
+    .middle_right{
+        order: 1;
+        flex-direction: row-reverse;
+    }
+}
+  
+@media (min-width: 576px) and (max-width: 767.98px){
+    .htpice , .bigpic , .subemiddle{
+      width: 540px;
+    }
+
+    .htpice{
+        flex-direction: column-reverse;
+    }
+
+    .threepic{
+        flex-direction: column;
+        order: 3;
+    }
+
+    .smalpic{
+        order: 2;
+        display: flex;
+        padding: 5px;
+    }
+    .ht_big{
+        order: 1;
+    }
+    /* -mask- */
+    .subemiddle{
+        flex-direction: column;
+    }
+
+    .pic3 , .pic2{
+        order: 3;
+        margin: 0 -10px;
+    }
+
+    .middle_right{
+        order: 1;
+        flex-direction: row-reverse;
+    }
+
+}
+  
+@media (min-width: 768px) and (max-width: 991.98px){
+    .htpice , .bigpic , .subemiddle {
+      width: 720px;
+    }
+
+    /* -mask- */
+    .pic3 , .pic2{
+        order: 3;
+        margin: 0 -10px;
+    }
+
+    .middle_left{
+        display: none;
+    }
+    
+}
+  
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .htpice , .bigpic , .subemiddle {
+      width: 960px;
+    }
+
+    
+}
+  
+@media (min-width: 1200px) and (max-width: 1139.98px){
+    .fooodout_waper , .foodou3 , .foodout2{
+      width:1140px;
+    }
+}
 

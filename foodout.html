@@ -34,19 +34,21 @@
         
         <nav class="foodsel">
             <ul>
-                <li><a href="#">NORTH</a></li>
-                <li><a href="#">CENTRAL</a></li>
-                <li><a href="#">SOUTH</a></li>
+                <li><a href="#foodout">NORTH</a></li>
+                <li><a href="#foodout2">CENTRAL</a></li>
+                <li><a href="#foodou3">SOUTH</a></li>
             </ul>
         </nav>
 
-    
+    <aside id="top">
+        <img src="./img/top.svg" alt="">
+    </aside>
     
     <!-- -----------美食部位--------  -->
     
         <article class="fooodout_waper">
-            <section class="foodout">
-                <div class="north_1">
+            <section id="foodout">
+                <div class="north">
                     <div class="food_taipei">
                         <a href="#"><h2>TAMSUI</h2><img src="./img/food/f1.jpg" alt=""></a>    
                     </div>
@@ -60,7 +62,7 @@
                     </div>
                 </div>
 
-                <div class="north_2">
+                <div class="north">
                     <div class="food_taipei">
                         <a href="#"><h2>TAOYUAN</h2><img src="./img/food/S__597573649 1.jpg" alt=""></a>
                     </div>
@@ -86,7 +88,7 @@
             
             
 
-            <section class="foodout2">
+            <section id="foodout2">
                 <div class="central">
                     <div class="food_middle3">
                         <a href="#"><h2>CHANGHUA</h2><img src="./img/food/S__597876765.jpg" alt=""></a> 
@@ -105,7 +107,7 @@
                     </div>
                 </div>
 
-                <div class="central_2">
+                <div class="central">
                     <div class="food_middle1">
                         <a href="#"><h2>BEITUN</h2><img src="./img/food/pexels-rodnae-productions-6646164.jpg" alt=""></a>
                     </div>
@@ -115,7 +117,7 @@
                     </div>
                 </div>
 
-                <div class="central_3">
+                <div class="central">
                     <div class="food_middle7">
                         <a href="#"><h2>DALI</h2><img src="./img/food/S__597573638.jpg" alt=""></a>
                     </div>
@@ -131,14 +133,14 @@
             </section>
 
 
-            <section class="foodou3">
+            <section id="foodou3">
                 <div class="food_south">
                     <div class="food_khh">
                         <a href="#"><h2>CHIAYI</h2><img src="./img/food/pexels-rodnae-productions-5779781.jpg" alt=""></a>
                     </div>
                 </div>
 
-                <div class="south_2">
+                <div class="south">
                     <div class="food_khh2">
                         <a href="#"><h2>TAINAN</h2><img src="./img/food/S__597573643.jpg" alt=""></a>                      
                     </div>
@@ -152,7 +154,7 @@
                     </div>
                 </div>
 
-                <div class="south_3">
+                <div class="south">
                     <div class="food_khh11">
                         <a href="#"><h2>BEIMEN</h2><img src="./img/food/S__597876756.jpg" alt=""></a>                      
                     </div>
@@ -170,7 +172,7 @@
                     </div>
                 </div>
 
-                <div class="south_4">
+                <div class="south">
                     <div class="food_khh6">
                         <a href="#"><h2>KENTING</h2><img src="./img/food/S__597876767.jpg" alt=""></a>                      
                     </div>
@@ -224,6 +226,15 @@
     <footer class="foote_p">
         <p>© 2022 Learning and Display purposes only.</p>
     </footer>
+
+    <script>
+        top.onclick = function(){
+            var top = document.documentElement.scrollTop
+            scrollBy(0,-top);
+        }
+
+        
+    </script>
 
 </body>
 </html>

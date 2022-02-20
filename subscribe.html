@@ -33,23 +33,21 @@
             </ul>
         </nav>
 
-        <div class="sub_bigpic">
+        <section class="sub_bigpic">
             <h1>SUBSCRIBE</h1>
-        </div>
+        </section>
 
 
-        <article calss="subscricbe_wapper">
-            <div class="sub_pic1">
-                <div class="pic1_text">
-                    <h3>Follow the latest</h3>
-                </div>
 
+            <section class="sub_pic1">               
+                <h3 class="pic1_text">Follow the latest</h3>
 
                 <div class="pic1">
-                    <img src="./img/sub/jill-burrow-.jpg" alt=""></div>
+                    <img src="./img/sub/jill-burrow-.jpg" alt="">
+                </div>
                 
-            </div>
-        </article>
+            </section>
+
 
 
             <div class="sub_pic2">
@@ -57,17 +55,6 @@
             </div>
                 
 
-                <!-- <div class="subemiddle">
-                    <div class="pic2">
-                        <img src="./img/sub/sub2.jpg" alt="">
-                    </div>
-                    
-                   
-
-                    <div class="pic3">
-                        <img src="./img/sub/sub3.jpg" alt="">
-                    </div>
-                </div> -->
 
         
         
@@ -77,10 +64,10 @@
             <h4>Enter your email below</h4>
         </section>
 
-        <div class="mail">
+        <form action="#" method="#" id="form">
             <ul>
                 <li>
-                    <input class="email" type="text" placeholder="E-mail："/>  
+                    <input id="email" type="text" placeholder="E-mail：" name="email" required="required"/>  
                 </li>
 
                 <li>
@@ -128,6 +115,26 @@
         <p>© 2022 Learning and Display purposes only.</p>
     </footer>
 
+    <script src="./is.min.js"></script>
+    <script>
+        var form_el=document.getElementById("form");
+        form_el.addEventListener("submit", function(e){
+            let email_el=document.getElementById("email");
+            console.log(email_el);
+
+            let send_el=true;
+
+            if(is.email(email_el.value)){
+
+            }else{
+                send_el=false;
+            }
+
+            if(!send_el){
+                e.preventDefault();
+            }
+        });
+    </script>
 
 </body>
 </html>

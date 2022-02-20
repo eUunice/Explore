@@ -45,9 +45,21 @@
 }
 
 
+aside{
+    position: fixed;
+    right: 3%;
+    bottom: 30px;
+    width: 50px;
+    background-color: white;
+    z-index: 1;
+  }
+
+  aside:hover{
+      border-radius: 50%;
+  }
 
 /* -----------美食部位-------- */
-.foodout{
+#foodout{
     display: flex;
     flex-direction: column;
 }
@@ -59,21 +71,18 @@
 }
 
  
-.foodout img , .foodout2 img , .foodou3 img{
+#foodout img , #foodout2 img , #foodou3 img{
     width: 100%;
     display: block;
 }
 
 
-.north_1 , .north_2 , .central{
+.north , .central , .south{
     display: flex;
 }
 
 
-.foodout h2{
-    font-size: 24px;
-    color: black;
-
+#foodout h2{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -82,7 +91,7 @@
 }
 
     
-.foodout a{
+#foodout a{
     display: block;
     position: relative;
 }
@@ -91,79 +100,38 @@
 
 
 
-.foodout2{
+#foodout2{
     display: flex;
     flex-direction: column;
 }
 
 
 .central h2{
-    font-size: 24px;
-    color: black;
-
     position: absolute;
     left: 50%;
     top: 50%;
     transform:translate(-50%,-50%);
     
 }
-
     
 .central a{
     display: block;
     position: relative;
 }
 
-.central_2 , .central_3{
-    display: flex;
-}
-
-.central_2 h2{
-    font-size: 24px;
-    color: black;
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform:translate(-50%,-50%);   
-}
 
 .fooodout_waper h2{
     color: #FFFFF3;
+    font-size: 28px;
 }
 
 
-    
-.central_2 a , .central_3 a{
+#foodou3 a{
     display: block;
     position: relative;
 }
 
-
-
-
-.central_3 h2{
-    font-size: 24px;
-    color: #FFFFF3;
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform:translate(-50%,-50%);
-    
-}
-
-
-
-.foodou3 a{
-    display: block;
-    position: relative;
-}
-
-.foodou3 h2{
-    font-size: 24px;
-    color: #FFFFF3;
-
+#foodou3 h2{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -171,30 +139,24 @@
 }
 
 
-.foodou3{
+#foodou3{
     display: flex;
     flex-direction: column;
     /* width: 1200px; */
 }
 
 
-
-.south_2 , .south_3 , .south_4{
-    display: flex;
-    justify-content: center;
-}
-
-.foodout a , .foodout2 a , .foodou3 a{
+#foodout a , #foodout2 a , #foodou3 a{
     filter: brightness(60%);
 }
 
-.foodout a:hover , .foodout2 a:hover , .foodou3 a:hover{
+#foodout a:hover , #foodout2 a:hover , #foodou3 a:hover{
     filter: brightness(100%);
 }
 
 
 
-.foodout{
+#foodout{
     z-index: 1;
 }
 
@@ -202,17 +164,11 @@
 /* ----------RWD------- */
 
 @media screen and (max-width: 575.98px){
-    .fooodout_waper , .foodou3 , .foodout2{
+    .fooodout_waper {
       width: 100%;
     }
-    .fooodout_waper h2{
-        font-size: 16px;
-    }
-}
-  
-@media (min-width: 576px) and (max-width: 767.98px){
-    .fooodout_waper , .foodou3 , .foodout2{
-      width: 540px;
+    aside{
+        width: 30px;
     }
 
     .fooodout_waper h2{
@@ -220,23 +176,32 @@
     }
 }
   
-@media (min-width: 768px) and (max-width: 991.98px){
-    .fooodout_waper , .foodou3 , .foodout2{
-      width: 720px;
+@media (min-width: 576px) and (max-width: 767.98px){
+    .fooodout_waper{
+      width: 540px;
     }
+
     .fooodout_waper h2{
         font-size: 20px;
     }
 }
   
-@media (min-width: 992px) and (max-width: 1199.98px){
-    .fooodout_waper , .foodou3 , .foodout2{
-      width: 960px;
+@media (min-width: 768px) and (max-width: 991.98px){
+    .fooodout_waper{
+      width: 720px;
+    }
+    .fooodout_waper h2{
+        font-size: 24px;
     }
 }
   
-@media (min-width: 1200px) and (max-width: 1139.98px){
-    .fooodout_waper , .foodou3 , .foodout2{
-      width:1140px;
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .fooodout_waper{
+      width: 960px;
+    }
+
+    .fooodout_waper h2{
+        font-size: 26px;
     }
 }
+

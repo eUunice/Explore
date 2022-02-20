@@ -156,30 +156,37 @@ video{
 }
 /* video end */
 
-.comteic2 , .comteic3{
-    /* display: flex; */
-    width: 100%;
-}
 
 .comteic2 img{
-    width: 100%;
-    
+    max-width: 100%;
+    display: block;    
 }
 
 .comteic2 ul{
     display: flex;
     margin: auto;
-    width: 1440px;
+    /* width: 1440px; */
     flex-wrap: wrap;
     justify-content: center;
     
 }
 
+.comteic2 a{
+    display: block;
+}
+
+.comcont{
+    overflow: hidden;
+}
+
+.comteic2{
+    /* width: 1440px; */
+}
+
 .comteic2 li{
     padding: 10px;
     width: 400px;
-    overflow: hidden;
-
+    
 }
 
 .comteic2 h4{
@@ -278,3 +285,6 @@ video{
 .smellcont{
     margin-bottom: 20px;
 }
+
+
+

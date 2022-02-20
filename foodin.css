@@ -7,6 +7,51 @@ main{
 }
 
 
+.hamburger_menu{
+    position: relative;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.ham-bar {
+    height: 3px;
+    width: 20px;
+    position: absolute;
+    transition: all .5s;
+}
+
+.ham-1 , .ham-2 , .ham-3{
+    width: 40px;
+    height: 2px;
+    background-color: #292929;
+    transition: 0.4s;
+}
+
+.ham-1{
+    transform: translateY(-6px);
+}
+  
+.ham-3{
+    transform: translateY(6px);
+}
+
+@media screen and (min-width: 768px){
+    .allnav{
+      display: block !important;
+    }
+}
+@media screen and (max-width: 767.98px){
+    .allnav{
+      display: none;
+    }
+
+    .allnav li{
+        display: block;
+    }
+}
+
+
 /*------ 美食選單----- */
 .foodsel ul{
     display: flex;
