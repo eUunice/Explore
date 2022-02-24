@@ -78,9 +78,6 @@ body img{
     margin: auto;
 }
 
-.ht_big{
-    margin: auto;
-}
 
 .threepic{
     margin: auto;
@@ -218,24 +215,31 @@ body img{
     background-color: #292929;
     width: 100%;
     justify-content: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
+
     position: relative;
+    padding: 20px;
 }
 
-.ootdpiture ul{
+.ootdpiture{
     display: flex;
     padding-top: 10px;
-    width: 1200px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .ootdpiture li{
-    padding-right: 20px;
-    padding-bottom: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: calc((80% - 60px) / 3);
     
 }
-
+/* @media (max-width: 767.98px){
+    .ootdpiture li{
+        width: calc((100% - 20px) / 2);
+    }
+    
+   
+} */
 
 
 
@@ -254,21 +258,6 @@ body img{
     filter: brightness(100%);
 }
 
-
-
-
-
-/* .ootdpiture h3{
-    font-size: 26px;
-    color: #FFFFF3;
-
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform:translate(-50%,-50%);
-    text-align: center;
-    opacity: .8;
-} */
 
 /* ----------RWD------- */
 
@@ -310,6 +299,10 @@ body img{
         order: 1;
         flex-direction: row-reverse;
     }
+
+    .ootdpiture li{
+        width: calc((100% - 20px) / 2);
+    }
 }
   
 @media (min-width: 576px) and (max-width: 767.98px){
@@ -349,10 +342,15 @@ body img{
         flex-direction: row-reverse;
     }
 
+    /* more */
+    .ootdpiture li{
+        width: calc((100% - 20px) / 2);
+    }
+
 }
   
 @media (min-width: 768px) and (max-width: 991.98px){
-    .htpice , .bigpic , .subemiddle {
+    .htpice , .bigpic , .subemiddle{
       width: 720px;
     }
 
@@ -365,11 +363,16 @@ body img{
     .middle_left{
         display: none;
     }
+
+    /* .ootdpiture li{
+        width: calc((100% - 20px) / 2);
+    } */
+    
     
 }
   
 @media (min-width: 992px) and (max-width: 1199.98px){
-    .htpice , .bigpic , .subemiddle {
+    .htpice , .bigpic , .subemiddle , .ootdpiture{
       width: 960px;
     }
 
@@ -377,7 +380,7 @@ body img{
 }
   
 @media (min-width: 1200px) and (max-width: 1139.98px){
-    .fooodout_waper , .foodou3 , .foodout2{
+    .htpice , .bigpic , .subemiddle{
       width:1140px;
     }
 }

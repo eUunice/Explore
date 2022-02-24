@@ -18,6 +18,7 @@
 
 
     <main>
+        
         <!---------- 主選單 ----------->
         <nav class="allnav">
             <ul>
@@ -53,14 +54,14 @@
 
         <article class="htpice">
             <div class="smalpic">
-                <img  class="htsmalpic_1" src="./img/ootd/Mask Group (33).jpg" alt="">
-                <img class="htsmalpic_2" src="./img/ootd/Mask Group (33).jpg" alt="">
-                <img class="htsmalpic_3" src="./img/ootd/Mask Group (33).jpg" alt="">
+                <img id="htsmalpic_1" src="./img/ht/174549.jpg" alt="">
+                <img id="htsmalpic_2" src="./img/ht/174552.jpg" alt="">
+                <img id="htsmalpic_3" src="./img/ht/174551.jpg" alt="">
                
             </div>
 
             <div class="ht_big">
-                <img src="./img/ootd/Mask Group (33).jpg" alt="">
+                <img id="ht_big" src="./img/ht/174550.jpg"  alt="">
             </div>
 
             <section class="threepic">
@@ -106,8 +107,7 @@
         </article>
 
         <section class="aboutootd">         
-                <div class="ootdpiture">
-                    <ul>
+                    <ul class="ootdpiture">
                         <li><a href="#">
                             <img src="./img/ootd/Mask Group (37).jpg" alt=""></a>
                         </li>
@@ -126,44 +126,31 @@
                         </li>
 
                         <li><a href="#">
-                            <img src="./img/ootd/Mask Group (39).jpg" alt=""></a>
+                            <img src="./img/ootd/S__238379016.jpg" alt=""></a>
                         </li>
 
                         <li><a href="#">
-                            <img src="./img/ootd/ootd8.jpg" alt=""></a>
+                            <img src="./img/ootd/S__238370825.jpg" alt=""></a>
                         </li>
-
-
 
                         <li><a href="#">
                             <img src="./img/ootd/ootd10.jpg" alt=""></a>
                         </li>
 
                         <li><a href="#">
-                            <img src="./img/ootd/ootd6.jpg" alt=""></a>
+                            <img src="./img/ootd/ootd8.jpg" alt=""></a>
                         </li>
 
                         <li><a href="#">
                             <img src="./img/ootd/Mask Group (31).jpg" alt=""></a>
                         </li>
-                    </ul>
-                    <!-- <ul>
-                        <li><a href="#">
-                            <img src="./img/ootd/Mask Group (37).jpg" alt=""></a>
-                        </li>
+
+                        
+
+
 
                         <li><a href="#">
-                            <img src="./img/ootd/Mask Group (38).jpg" alt=""></a>
-                        </li>
-
-                        <li><a href="#">
-                            <img src="./img/ootd/Mask Group (36).jpg" alt=""></a>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li><a href="#">
-                            <img src="./img/ootd/Mask Group (32).jpg" alt=""></a>
+                            <img src="./img/ootd/ootd4.jpg" alt=""></a>
                         </li>
 
                         <li><a href="#">
@@ -171,23 +158,11 @@
                         </li>
 
                         <li><a href="#">
-                            <img src="./img/ootd/ootd8.jpg" alt=""></a>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li><a href="#">
-                            <img src="./img/ootd/ootd10.jpg" alt=""></a>
-                        </li>
-
-                        <li><a href="#">
                             <img src="./img/ootd/ootd6.jpg" alt=""></a>
                         </li>
 
-                        <li><a href="#">
-                            <img src="./img/ootd/Mask Group (31).jpg" alt=""></a>
-                        </li>
-                    </ul> -->
+                        
+                    </ul>
         </section>
             
     </main>
@@ -228,6 +203,38 @@
     <footer class="foote_p">
         <p>© 2022 Learning and Display purposes only.</p>
     </footer>
+
+    <script>
+        window.onload=function(){
+            var ht_big_el=document.getElementById("ht_big");
+            var htsmalpic_1_el=document.getElementById("htsmalpic_1");
+            var htsmalpic_2_el=document.getElementById("htsmalpic_2");
+            var htsmalpic_3_el=document.getElementById("htsmalpic_3");
+
+
+            ht_big_el.addEventListener("click", function(){
+                ht_big_el.src="./img/ht/174550.jpg";
+            });
+
+            htsmalpic_1_el.addEventListener("click", function(){
+                ht_big_el.src="./img/ht/174549.jpg";
+            });
+
+            htsmalpic_2_el.addEventListener("click", function(){
+                ht_big_el.src="./img/ht/174552.jpg";
+            });
+
+            htsmalpic_3_el.addEventListener("click", function(){
+                ht_big_el.src="./img/ht/174551.jpg";
+            });
+
+            // ----------ht ending --------//
+
+            
+        }
+
+
+    </script>
 
 </body>
 </html>
