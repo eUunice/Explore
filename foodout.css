@@ -1,6 +1,10 @@
 @import url('logonavfot.css');
 
 
+html{
+    scroll-behavior: smooth;
+
+}
 
 .main{
     min-height: 100%;
@@ -52,11 +56,14 @@ aside{
     width: 50px;
     background-color: white;
     z-index: 1;
-  }
+    
+}
 
-  aside:hover{
-      border-radius: 50%;
-  }
+aside:hover{
+    border-radius: 50%;
+}
+
+
 
 /* -----------美食部位-------- */
 #foodout{
