@@ -14,24 +14,72 @@
             <img src="./img/LOGO.svg" alt=""></a>
     </header>
 
+    <nav class="allnav">
 
+        <div class="nav1">
+            
+            <!-- <a href="#" class="logow" style="width:100px"><img src="./img/wlogo.svg" alt=""></a> -->
+            
+            <button type="button" class="hamburger_menu">
+                <span class="ham-1 ham-bar"></span>
+                <span class="ham-2 ham-bar"></span>
+                <span class="ham-3 ham-bar"></span>
+            </button>
+        </div>
+         <!-- <button type="button" class="hamburger_menu">
+            <span class="ham-1 ham-bar"></span>
+            <span class="ham-2 ham-bar"></span>
+            <span class="ham-3 ham-bar"></span>
+        </button> --> 
+
+        <ul class="menu">
+            <li class="item"><a href="money.html">LUXURY</a></li>
+    
+            <li class="item"><a href="ootd.html">OUTFIT</a></li>
+    
+            <li class="item"><a href="subscribe.html">SUBSCRIBE</a></li>
+
+            <li class="item"><a href="foodout.html">DELICACY</a></li>
+
+            <li class="item"><a href="travel.html">TRAVEL</a></li>
+            
+        </ul>
+    </nav>
 
     
     <main>
                 <!---------- 主選單 ----------->
-        <nav class="allnav">
-            <ul>
-                <li><a href="money.html">LUXURY</a></li>
-        
-                <li><a href="ootd.html">OUTFIT</a></li>
-        
-                <li><a href="subscribe.html">SUBSCRIBE</a></li>
+        <!-- <nav class="allnav">
 
-                <li><a href="foodout.html">DELICACY</a></li>
+            <div class="nav1">
+                <h1>
+                    <a href="#" class="logow"><img src="./img/wlogo.svg" alt=""></a>
+                </h1>
+                <button type="button" class="hamburger_menu">
+                    <span class="ham-1 ham-bar"></span>
+                    <span class="ham-2 ham-bar"></span>
+                    <span class="ham-3 ham-bar"></span>
+                </button>
+            </div>
+             <button type="button" class="hamburger_menu">
+                <span class="ham-1 ham-bar"></span>
+                <span class="ham-2 ham-bar"></span>
+                <span class="ham-3 ham-bar"></span>
+            </button> -->
 
-                <li><a href="travel.html">TRAVEL</a></li>
+            <!-- <ul class="menu">
+                <li class="item"><a href="money.html">LUXURY</a></li>
+        
+                <li class="item"><a href="ootd.html">OUTFIT</a></li>
+        
+                <li class="item"><a href="subscribe.html">SUBSCRIBE</a></li>
+
+                <li class="item"><a href="foodout.html">DELICACY</a></li>
+
+                <li class="item"><a href="travel.html">TRAVEL</a></li>
+                
             </ul>
-        </nav>
+        </nav> --> 
 
         <section class="sub_bigpic">
             <h1>SUBSCRIBE</h1>
@@ -67,7 +115,7 @@
         <form action="#" method="#" id="form">
             <ul>
                 <li>
-                    <input id="email" type="text" placeholder="E-mail：" name="email" required="required"/>  
+                    <input id="email" type="email" placeholder="E-mail：" name="email" required="required"/>  
                 </li>
 
                 <li>
@@ -104,7 +152,7 @@
         <div class="foot_right">
             <h1>CONTACT US</h1>
             <ul>
-                <li><a href="#">Tel: +886 1234566 </a></li>
+                <li><a href="#">Tel: +886 12345 </a></li>
                 <li><a href="#">Add: Taiwan,Tibame</a></li>
             </ul>
         </div>
@@ -116,24 +164,57 @@
     </footer>
 
     <script src="./is.min.js"></script>
+    <script src="./vendors/jquery/jquery-3.6.0.min.js"></script>
     <script>
         var form_el=document.getElementById("form");
-        form_el.addEventListener("submit", function(e){
+        form_el.addEventListener("submit", function(){
             let email_el=document.getElementById("email");
             console.log(email_el);
 
             let send_el=true;
 
             if(is.email(email_el.value)){
-
+                alert("Sent to your email");
             }else{
-                send_el=false;
-            }
-
-            if(!send_el){
-                e.preventDefault();
+                alert("Your email has an error");
             }
         });
+    </script>
+
+    <script>
+        
+
+        document.addEventListener("DOMContentLoaded", function(){
+            let hamburger_menu=document.getElementsByClassName("hamburger_menu")[0];
+            let hamburger_menu1=document.getElementsByClassName("ham-1")[0];
+            let hamburger_menu2=document.getElementsByClassName("ham-2")[0];
+            let hamburger_menu3=document.getElementsByClassName("ham-3")[0];
+            hamburger_menu.addEventListener("click", function(){
+                hamburger_menu1.classList.toggle("-on");
+                hamburger_menu2.classList.toggle("-on");
+                hamburger_menu3.classList.toggle("-on");
+            })
+        });
+
+
+        // $(".hamburger_menu").on("click",function(){
+        //     $(".allnav .menu").slideToggle();
+        // });
+
+        $(".hamburger_menu").on("click",function(){
+            var vis = $(".item").css("visibility");
+            if(vis=="hidden")
+            {
+                $( ".item" ).css("visibility","visible");                    
+            }
+            else
+            {
+                $( ".item" ).css("visibility","hidden");                    
+            }
+
+        });
+        
+
     </script>
 
 </body>
