@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DelicacY in Taipei | EXPLORE</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="foodin.css">
     <link rel="shortcut icon" href="./img/bitbug_favicon.ico"/>
 </head>
@@ -18,16 +19,18 @@
 
     
 <main>
-    <button type="button" class="hamburger_menu">
-        <span class="ham-1 ham-bar"></span>
-        <span class="ham-2 ham-bar"></span>
-        <span class="ham-3 ham-bar"></span>
-    </button>
-
-
     <!-- 主選單  -->
     <nav class="allnav">
-        <ul>
+
+        <input type="checkbox" id="ham">
+
+        <label for="ham" class="hamburger_menu">
+            <span class="ham-1 ham-bar"></span>
+            <span class="ham-2 ham-bar"></span>
+            <span class="ham-3 ham-bar"></span>
+        </label>
+        
+        <ul class="menu">
             <li><a href="money.html">LUXURY</a></li>
     
             <li><a href="ootd.html">OUTFIT</a></li>
@@ -37,14 +40,17 @@
             <li><a href="foodout.html">DELICACY</a></li>
 
             <li><a href="travel.html">TRAVEL</a></li>
+            
         </ul>
     </nav>
 
+ 
+
     <nav class="foodsel">
         <ul>
-            <li><a href="#">NORTH</a></li>
-            <li><a href="#">CENTRAL</a></li>
-            <li><a href="#">SOUTH</a></li>
+            <li><a href="foodout.html">NORTH</a></li>
+            <li><a href="foodout.html">CENTRAL</a></li>
+            <li><a href="foodout.html">SOUTH</a></li>
         </ul>
     </nav>
 
@@ -55,28 +61,28 @@
         <!-- -----------美食地圖--------  -->
         <div class="allfoodwarpper">
             <div class="foodiewaper">
-                <div class="foodie">
+                <div class="foodie" data-aos="fade-zoom-in" data-aos-delay="650" data-aos-offset="0">
                     <span class="foodbeape"> </span>
 
                     <span class="foodbeape2"></span>
 
                     <span class="foodbeape3"></span>
                 </div>
-                <div class="foodmap">
-                    <section><h2>BeApe Restaurant</h2>
+                <div class="foodmap" >
+                    <section data-aos="fade-down"><h2>BeApe Restaurant</h2>
                     <h3>Tournedos Rossini</h3>
                 <p>BeApe Classic Sign 1850. The bottom layer is prime beef filet, <br>the middle layer is pan-fried duck liver, with thick smoked bacon, <br>and the top layer is black truffle slices.</p></section>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9041.486248627809!2d121.5293230783774!3d25.064052295902638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a969d447cd57%3A0x1b4c930c704cd1ae!2sBeApe%20Restaurant!5e0!3m2!1szh-TW!2stw!4v1643603760451!5m2!1szh-TW!2stw" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9041.486248627809!2d121.5293230783774!3d25.064052295902638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a969d447cd57%3A0x1b4c930c704cd1ae!2sBeApe%20Restaurant!5e0!3m2!1szh-TW!2stw!4v1643603760451!5m2!1szh-TW!2stw" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" data-aos="fade-up"></iframe></div>
             </div>
 
             <div class="foodie2waper">
                 <div class="food2map">
-                    <section><h2>Cantine Marais</h2>
+                    <section data-aos="fade-down"><h2>Cantine Marais</h2>
                     <h3>Sea Urchin Risotto</h3>
                 <p>If you like seafood , you can choose , Sea Urchin Risotto , <br>this dish contains scallops , Yuzu and White wine caviar sauce.</p></section>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.653247014218!2d121.54730681484207!3d25.045839083966726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abfe945ca01d%3A0xe3c781cc0e7c52a6!2zQ2FudGluZSBNYXJhaXMg55Gq6buR6aSQ6YWS!5e0!3m2!1szh-TW!2stw!4v1643601971224!5m2!1szh-TW!2stw" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.653247014218!2d121.54730681484207!3d25.045839083966726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abfe945ca01d%3A0xe3c781cc0e7c52a6!2zQ2FudGluZSBNYXJhaXMg55Gq6buR6aSQ6YWS!5e0!3m2!1szh-TW!2stw!4v1643601971224!5m2!1szh-TW!2stw" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" data-aos="fade-up"></iframe></div>
             
-                <div class="food2">
+                <div class="food2" data-aos="fade-zoom-in" data-aos-delay="650" data-aos-offset="0">
                     <span class="marais"></span>
                     <span class="marais2"></span>
                     <span class="marais3"></span>
@@ -85,16 +91,16 @@
             <!-- /* 第二張end */ -->
 
             <div class="foodie3waper">
-                <div class="food3">
-                    <span class="buger"></span>
+                <div class="food3" data-aos="fade-zoom-in" data-aos-delay="650" data-aos-offset="0">
+                    <span class="buger" ></span>
                     <span class="buger2"></span>
                     <span class="buger3"></span>
                 </div>
                 <div class="food3map">
-                    <section><h2>Burger Restaurant</h2>
+                    <section data-aos="fade-down"><h2>Burger Restaurant</h2>
                     <h3>Double Beef Top Burger</h3>
                 <p>This is a top burger with double beef,lettuce and beef tomato <br>on the bottom layer, sandwiched between hamburger meat and cheese.</p></section>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9041.486248627809!2d121.5293230783774!3d25.064052295902638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a969d447cd57%3A0x1b4c930c704cd1ae!2sBeApe%20Restaurant!5e0!3m2!1szh-TW!2stw!4v1643603760451!5m2!1szh-TW!2stw" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9041.486248627809!2d121.5293230783774!3d25.064052295902638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a969d447cd57%3A0x1b4c930c704cd1ae!2sBeApe%20Restaurant!5e0!3m2!1szh-TW!2stw!4v1643603760451!5m2!1szh-TW!2stw" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" data-aos="fade-up"></iframe></div>
             </div>
         </div>
 </main>
@@ -135,7 +141,14 @@
     <p>© 2022 Learning and Display purposes only.</p>
 </footer>
 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1500,
+        easing: "liner"
+    });
+    
+</script>
 
 </body>
 </html>
