@@ -64,6 +64,7 @@ body img{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    padding-bottom: 80px;
 }
 
 .htpice img{
@@ -85,32 +86,35 @@ body img{
 
 
 /*-- 待輪播 --*/
-.everyootd img{
+
+.slider li{
+    /* background-color: teal; */
+    /* padding: 5px; */
+    
+    
+}
+
+.bigpic{
+    /* width: 1440px; */
+    margin: 0 auto;    
+}
+
+.bigpic img{
     width: 100%;
     display: block;
 }
 
 
-.bigpic{
-    width: 1440px;
-    margin: 0 auto;
+
+
+.slick-next{
+    display: none;
+    right: 25px;
 }
 
-.bigpic img{
-    width: 100%;
-}
-
-.bigpic{
-    padding:80px 0;
-}
-
-.bigpic ul{
-    display: flex;
-    justify-content: center;
-}
-
-.bigpic ul:nth-child(1){
-    align-items: center;
+.slick-prev{
+    left: 25px;
+    display: none;
 }
 
 /* 輪播end */
@@ -136,7 +140,7 @@ body img{
     margin: auto;
     justify-content: center;
     display: flex;
-    /* padding: 0 120px; */
+    padding: 100px 0 0;
     padding-bottom: 80px;
     width: 1440px;
 }
@@ -155,8 +159,16 @@ body img{
     margin: 0 10px;
 }
 
+/* .pic2.slide-in{
+    transform: translateX(-30%);
+}
+
+.pic2.slide-in{
+    transform: translateX(0%);
+} */
+
 .middle_left{
-    animation:  left 10s forwards;
+    animation:  left 20s forwards;
 }
 
 @keyframes left{
@@ -171,8 +183,8 @@ body img{
     }
 }
 
-.middle_right{
-    animation:  right 10s forwards;
+.middle_right , .threepic{
+    animation:  right 20s forwards;
 }
 
 @keyframes right{
@@ -262,7 +274,7 @@ body img{
 /* ----------RWD------- */
 
 @media screen and (max-width: 575.98px){
-    .htpice , .bigpic , .subemiddle{
+    .htpice , .bigpic , .subemiddle , .aboutootd{
       width: 100%;
     }
     
@@ -296,12 +308,17 @@ body img{
     }
 
     .middle_right{
-        order: 1;
-        flex-direction: row-reverse;
+        display: none;
     }
 
     .ootdpiture li{
-        width: calc((100% - 20px) / 2);
+        width: calc((80% - 20px) / 2);
+
+    }
+
+    .ootdpiture li:nth-child(even){
+        margin-right: 10px;
+        margin-right: -20px;
     }
 }
   
@@ -309,6 +326,8 @@ body img{
     .htpice , .bigpic , .subemiddle{
       width: 540px;
     }
+
+
 
     .htpice{
         flex-direction: column-reverse;

@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OutfiT | EXPLORE</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
     <link rel="stylesheet" href="ootd.css">
     <link rel="shortcut icon" href="./img/bitbug_favicon.ico"/>
 </head>
@@ -53,15 +56,16 @@
         <!------------ht 版面 細節圖---------->
 
         <article class="htpice">
-            <div class="smalpic">
-                <img id="htsmalpic_1" src="./img/ht/174549.jpg" alt="">
-                <img id="htsmalpic_2" src="./img/ht/174552.jpg" alt="">
-                <img id="htsmalpic_3" src="./img/ht/174551.jpg" alt="">
+            <div class="smalpic" style="cursor: pointer;">
+                <img id="htsmalpic" src="./img/ht/174550.jpg" alt="sky">
+                <img id="htsmalpic_1" src="./img/ht/174549.jpg" alt="glass">
+                <img id="htsmalpic_2" src="./img/ht/174551.jpg" alt="hand">
+                <img id="htsmalpic_3" src="./img/ht/174552.jpg" alt="body">
                
             </div>
 
             <div class="ht_big">
-                <img id="ht_big" src="./img/ht/174550.jpg"  alt="">
+                <img id="ht_big" src="./img/ht/174550.jpg"  alt="sky">
             </div>
 
             <section class="threepic">
@@ -76,25 +80,28 @@
 
             <!--  待輪播 -->
             <div class="bigpic">
-                <ul>
-                    <li>
-                        <a href=""><img src="./img/next1.png" alt="" style="width: 50px"></a>
-                    </li>
-                    <li><img src="./img/pexels-cottonbro-8443631.jpg" alt=""></li>
-                    <li>
-                        <a href=""><img src="./img/next.png" alt="" style="width: 50px"></a>
-                    </li>
-                </ul>
+                
+                    <ul class="slider autoplay">
+                        <li><img src="./img/pexels-cottonbro-8443631.jpg" alt=""></li>
+                        <li><img src="./img/pexels-harsh-kushwaha-1721559.jpg" alt=""></li>
+                        <li><img src="./img/pexels-cottonbro-9953170.jpg" alt=""></li>
+                        <li><img src="./img/pexels-mart-production-8945245.jpg" alt=""></li>
+                        
+                    </ul>
+
+                    
+                
+                
             </div>
             <!-- 輪播end -->
 
             <article class="subemiddle">
                 <h2 class="middle_left">prevention of covid-19</h2>
-                    <div class="pic2">
+                    <div class="pic2" data-aos="fade-right" data-aos-delay="500">
                         <img src="./img/ootd/ootd7.jpg" alt="">
                     </div>
 
-                    <div class="pic3">
+                    <div class="pic3" data-aos="fade-left" data-aos-delay="500">
                         <img src="./img/ootd/ootd9.jpg" alt="">
                     </div>
                 <h2 class="middle_right">wear a mask OUTFIT of oneday</h2>
@@ -204,35 +211,67 @@
         <p>© 2022 Learning and Display purposes only.</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            easing: "liner"
+        });
+
+        $('.autoplay').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+        });
+        
+    </script>
+
+    
     <script>
         window.onload=function(){
-            var ht_big_el=document.getElementById("ht_big");
-            var htsmalpic_1_el=document.getElementById("htsmalpic_1");
-            var htsmalpic_2_el=document.getElementById("htsmalpic_2");
-            var htsmalpic_3_el=document.getElementById("htsmalpic_3");
+            let htsmalpic_el=document.getElementById("htsmalpic");
+            let ht_big_el=document.getElementById("ht_big");
+            let htsmalpic_1_el=document.getElementById("htsmalpic_1");
+            let htsmalpic_2_el=document.getElementById("htsmalpic_2");
+            let htsmalpic_3_el=document.getElementById("htsmalpic_3");
 
 
-            ht_big_el.addEventListener("click", function(){
-                ht_big_el.src="./img/ht/174550.jpg";
+            htsmalpic_el.addEventListener("click", function(){
+                ht_big_el.src=htsmalpic_el.src;
             });
 
             htsmalpic_1_el.addEventListener("click", function(){
-                ht_big_el.src="./img/ht/174549.jpg";
+                ht_big_el.src=htsmalpic_1_el.src;
             });
 
             htsmalpic_2_el.addEventListener("click", function(){
-                ht_big_el.src="./img/ht/174552.jpg";
+                ht_big_el.src=htsmalpic_2_el.src;
             });
 
             htsmalpic_3_el.addEventListener("click", function(){
-                ht_big_el.src="./img/ht/174551.jpg";
-            });
+                ht_big_el.src=htsmalpic_3_el.src;
+            });          
+        }   // ----------ht ending --------//
+    </script>
+    
 
-            // ----------ht ending --------//
 
+    <script>
+        
             
-        }
+        // window.onload=function(){
+        //     let slider=document.getElementsByClassName("slider");
+        //     let sliderimg=document.querySelector(".slider > li > img");
+        //     slider.style.width=500*sliderimg.length+"px";
+            
 
+        // };
+
+     
 
     </script>
 
