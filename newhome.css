@@ -27,25 +27,20 @@ header img{
 main{
     width: 100%;
 }
-.bb{
-    width: 100%;
-    display: flex;
-    padding:20px 0 5px;
-}
+
 
 .banner{
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
-    /* width: 1440px; */
     flex-wrap: wrap;
-    margin: 30px auto;
+    margin: 0 auto;
+
+
 }
 
 .banner img{
     display: block;
 }
-
-
 
 .banner2 , .banner3 , .banner4{
     margin: 0 10px 0px 0px;
@@ -84,25 +79,102 @@ main{
     background-color: rgba(0, 0, 0, .5);
     text-align: center;
     opacity: .8;
+    z-index: 1;
 }
 
-/* .banner h2:hover{
-    opacity: 1;
+/* ----------R--------W-----D------- */
+@media screen and (max-width: 575.98px){
+    .banner__single::before {
+        content:"";
+        width: 100%;
+        padding-bottom: 100%;
+        display: block;
+    }
+
+    .banner__single{
+        position: relative;
+        width: 50%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
     
-} */
+    
+    .banner__single a{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .banner__single img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
 
-/* .banner h2:after{
-    content: "";
-    display: block;
-    width: 0%;
-    height: 2px;
-    background-color: #FFFFF3;
-    transition: .5s .2s;
-    margin: 0 auto;
+    .banner3 {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }    
+
+    .banner h2{
+        font-size: 1.6rem;
+        /* position: absolute; */
+        background-color: rgba(0, 0, 0, 0);
+
+    }
 }
 
-.banner:hover h2::after{
-    width: 50%;
-} */
+  
+@media (min-width: 576px) and (max-width: 767.98px){
+    .banner__single::before {
+        content:"";
+        width: 100%;
+        padding-bottom: 100%;
+        display: block;
+    }
 
+    .banner__single{
+        position: relative;
+        width: 50%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    
+    .banner__single a{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .banner__single img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
 
+    .banner h2{
+        font-size: 1.6rem;
+        /* position: absolute; */
+        background-color: rgba(0, 0, 0, 0);
+
+    }
+}
+  
