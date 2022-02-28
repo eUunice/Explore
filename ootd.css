@@ -71,14 +71,15 @@ body img{
     width: 100%;
 }
 
-.smalpic img{
-    width: 100px;
-    
-}
 .smalpic {
     margin: auto;
+    
 }
 
+.smalpic img{
+    margin: 5px;
+    width: 120px;
+}
 
 .threepic{
     margin: auto;
@@ -292,6 +293,12 @@ body img{
         display: flex;
         padding: 5px;
     }
+
+    .smalpic img{
+        margin: 2px;
+        width: 100px;
+    }
+    
     .ht_big{
         order: 1;
     }
