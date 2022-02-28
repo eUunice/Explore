@@ -34,6 +34,17 @@ main{
 
 }
 
+@media screen and (max-width: 767.98px){
+    .toptite{
+        flex-direction: column;
+    }
+    .toptite2 h3{
+        padding: 0px;
+        width: 130px;
+        margin: auto;
+    }
+}
+
 .topic{
     display: flex;
     flex-grow: 1;
@@ -179,9 +190,7 @@ video{
     overflow: hidden;
 }
 
-.comteic2{
-    /* width: 1440px; */
-}
+
 
 .comteic2 li{
     padding: 10px;
