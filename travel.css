@@ -249,8 +249,16 @@ main{
 /* -----------R-------W-----D------------ */  
 @media screen and (max-width: 575.98px){
 
+    .toptite h2{
+        display: none;
+    }
+
+    .toptite2 h1{
+        top: 60%;
+    }
+
     .travel{
-        height: 500px;
+        height: 450px;
         background-attachment: local;
     }
 
