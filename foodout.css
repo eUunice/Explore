@@ -1,10 +1,7 @@
 @import url('logonavfot.css');
 
 
-html{
-    scroll-behavior: smooth;
 
-}
 
 .main{
     min-height: 100%;
@@ -53,14 +50,16 @@ aside{
     position: fixed;
     right: 3%;
     bottom: 30px;
-    width: 50px;
+    width: 55px;
     background-color: white;
-    z-index: 1;
+    z-index: 1999;
+    border-radius: 50%;
+    
     
 }
 
 aside:hover{
-    border-radius: 50%;
+    background-color: burlywood;
 }
 
 
@@ -175,7 +174,7 @@ aside:hover{
       width: 100%;
     }
     aside{
-        width: 30px;
+        width: 25px;
     }
 
     .fooodout_waper h2{

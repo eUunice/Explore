@@ -14,11 +14,10 @@
             <img src="./img/LOGO.svg" alt=""></a>
     </header>
 
-    <nav class="allnav">
+    <!-- <nav class="allnav">
 
         <div class="nav1">
             
-            <!-- <a href="#" class="logow" style="width:100px"><img src="./img/wlogo.svg" alt=""></a> -->
             
             <button type="button" class="hamburger_menu">
                 <span class="ham-1 ham-bar"></span>
@@ -26,11 +25,11 @@
                 <span class="ham-3 ham-bar"></span>
             </button>
         </div>
-         <!-- <button type="button" class="hamburger_menu">
+         <button type="button" class="hamburger_menu">
             <span class="ham-1 ham-bar"></span>
             <span class="ham-2 ham-bar"></span>
             <span class="ham-3 ham-bar"></span>
-        </button> --> 
+        </button> 
 
         <ul class="menu">
             <li class="item"><a href="money.html">LUXURY</a></li>
@@ -44,30 +43,19 @@
             <li class="item"><a href="travel.html">TRAVEL</a></li>
             
         </ul>
-    </nav>
+    </nav> -->
 
     
     <main>
                 <!---------- 主選單 ----------->
-        <!-- <nav class="allnav">
-
-            <div class="nav1">
-                <h1>
-                    <a href="#" class="logow"><img src="./img/wlogo.svg" alt=""></a>
-                </h1>
-                <button type="button" class="hamburger_menu">
-                    <span class="ham-1 ham-bar"></span>
-                    <span class="ham-2 ham-bar"></span>
-                    <span class="ham-3 ham-bar"></span>
-                </button>
-            </div>
+        <nav class="allnav">
              <button type="button" class="hamburger_menu">
                 <span class="ham-1 ham-bar"></span>
                 <span class="ham-2 ham-bar"></span>
                 <span class="ham-3 ham-bar"></span>
-            </button> -->
+            </button>
 
-            <!-- <ul class="menu">
+            <ul class="menu">
                 <li class="item"><a href="money.html">LUXURY</a></li>
         
                 <li class="item"><a href="ootd.html">OUTFIT</a></li>
@@ -79,7 +67,7 @@
                 <li class="item"><a href="travel.html">TRAVEL</a></li>
                 
             </ul>
-        </nav> --> 
+        </nav> 
 
         <section class="sub_bigpic">
             <h1>SUBSCRIBE</h1>
@@ -163,8 +151,10 @@
         <p>© 2022 Learning and Display purposes only.</p>
     </footer>
 
+    <!-- mail -->
     <script src="./is.min.js"></script>
     <script src="./vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./hambug.js"></script>
     <script>
         var form_el=document.getElementById("form");
         form_el.addEventListener("submit", function(){
@@ -180,42 +170,9 @@
             }
         });
     </script>
+    
 
-    <script>
-        
-
-        document.addEventListener("DOMContentLoaded", function(){
-            let hamburger_menu=document.getElementsByClassName("hamburger_menu")[0];
-            let hamburger_menu1=document.getElementsByClassName("ham-1")[0];
-            let hamburger_menu2=document.getElementsByClassName("ham-2")[0];
-            let hamburger_menu3=document.getElementsByClassName("ham-3")[0];
-            hamburger_menu.addEventListener("click", function(){
-                hamburger_menu1.classList.toggle("-on");
-                hamburger_menu2.classList.toggle("-on");
-                hamburger_menu3.classList.toggle("-on");
-            })
-        });
-
-
-        // $(".hamburger_menu").on("click",function(){
-        //     $(".allnav .menu").slideToggle();
-        // });
-
-        $(".hamburger_menu").on("click",function(){
-            var vis = $(".item").css("visibility");
-            if(vis=="hidden")
-            {
-                $( ".item" ).css("visibility","visible");                    
-            }
-            else
-            {
-                $( ".item" ).css("visibility","hidden");                    
-            }
-
-        });
-        
-
-    </script>
+    
 
 </body>
 </html>

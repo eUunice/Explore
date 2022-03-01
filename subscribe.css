@@ -1,127 +1,15 @@
 @import url('logonavfot.css');
 
 
-html, body{
+/* html, body{
     height: 100%;
-}
+} */
 
 .allnav li:nth-child(3) a{
     color: burlywood;
 }
 
-/* label */
-.hamburger_menu{
-    position: absolute;
-    cursor: pointer;
-    display: inline-block;
-    /* width: 80%; */
-    /* z-index: 11; */
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: transparent;
-    border: 0;
-    bottom: 50%;
-    right: 10%;
-}
 
-.ham-bar {
-    
-    position: absolute;
-    transition: all .5s;
-    
-}
-
-.ham-1 , .ham-2 , .ham-3{
-    width: 40px;
-    height: 2px;
-    background-color: #292929;
-    transition: 0.4s;
-    
-    display: block;
-    position: relative;
-}
-
-
-
-.hamburger_menu .ham-1.-on{
-    transform: rotate(-45deg);
-}
-
-.hamburger_menu .ham-3.-on{
-    transform: rotate(45deg);
-}
-
-.hamburger_menu .ham-2.-on{
-    opacity: 0;
-    transition: .5;
-}
-
-.nav1{
-    height: 50px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-
-/*  */
-
-.ham-1 , .ham-3{
-    position: absolute;
-    transition: .2s ease-out;
-    
-    
-}
-.ham-1{
-    transform: translateY(-6px);
-}
-  
-.ham-3{
-    transform: translateY(6px);
-}
-
-@media screen and (min-width: 768px){
-    .allnav .menu{
-        /* display: block; */
-    }
-
-    .hamburger_menu{
-        display: none;
-    }
-    
-}
-@media screen and (max-width: 767.98px) {
-    .allnav .menu > li {
-      /* display: none; */
-      visibility: hidden;
-      
-        
-    }
-    .vis {
-      visibility: hidden;
-    }
-    /* .hamburger_menu {
-      display: inline-block;
-    } */
-    .item {
-      visibility: hidden;
-      
-    }
-
-    .hamburger_menu{
-        display: block;
-    }
-
-    .allnav .menu{
-        /* flex-direction: column;
-        height: 100vh;
-        clear: none;
-        background-color: white; */
-    }
-    
-}
 
 /* ---------------------大圖 */
 .sub_bigpic{
@@ -297,8 +185,12 @@ main img{
 
 @media screen and (max-width: 575.98px){
     .sub_bigpic{
-        height: 500px;
+        height: 450px;
         background-position: center;
+    }
+
+    .sub_bigpic h1{
+        top: 70%; 
     }
 
     .sub_pic2::after , .sub_content h5:before{
