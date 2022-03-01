@@ -259,14 +259,6 @@ body img{
     width: calc((80% - 60px) / 3);
     
 }
-/* @media (max-width: 767.98px){
-    .ootdpiture li{
-        width: calc((100% - 20px) / 2);
-    }
-    
-   
-} */
-
 
 
 .ootdpiture h3:hover{
@@ -327,10 +319,6 @@ body img{
         display: none;
     }
 
-    .middle_right{
-        display: none;
-    }
-
     .middle_left , .middle_right{
         animation:  none;
     }
@@ -339,6 +327,11 @@ body img{
         display: flex;
         text-align: center;
         flex-direction: column;
+        font-size: 18px;
+    }
+
+    .pic3{
+        margin: 0;
     }
 
     .ootdpiture li{
