@@ -41,6 +41,7 @@ main{
 
 main img{
     display: block;
+    width: 100%;
 }
 
 
@@ -70,7 +71,7 @@ main img{
 
 
 .sub_pic2{
-    width: 380px;
+    width: 375px;
     margin: 0 auto;
     padding: 50px 0 50px;
     position: relative;
@@ -184,6 +185,12 @@ main img{
 /* ----------R-----W------D------- */
 
 @media screen and (max-width: 575.98px){
+    
+    .pic1_text{
+        margin: 0 10px;
+        font-size: 26px;
+    }
+
     .sub_bigpic{
         height: 450px;
         background-position: center;
@@ -195,6 +202,10 @@ main img{
 
     .sub_pic2::after , .sub_content h5:before{
         display: none;
+    }
+
+    .sub_content{
+        padding: 0;
     }
 }
   
