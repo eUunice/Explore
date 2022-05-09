@@ -5,7 +5,7 @@
 
 .main{
     min-height: 100%;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .allnav li:nth-child(4) a{
@@ -60,6 +60,7 @@ aside{
 
 aside:hover{
     background-color: burlywood;
+    cursor: pointer;
 }
 
 
