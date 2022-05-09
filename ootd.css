@@ -4,7 +4,6 @@
 
 main{
     min-height: 100%;
-    width: 100%;
 }
 
 body img{
@@ -92,7 +91,6 @@ body img{
 .bigpic{
     width: 1440px;
     margin: 0 auto;
-    /* display: flex; */
     align-items: center;
 }
 
@@ -112,7 +110,6 @@ body img{
 .bigpic ul{
     display: flex;
     justify-content: center; 
-    /* align-items: center;  */
 }
 
 .bigpic ul:nth-child(1){
@@ -133,16 +130,6 @@ body img{
 
 /* 輪播end */
 
-
-
-.pic2 img{
-    /* display: flex;
-    justify-content: flex-end; */
-    /* position: relative;
-    z-index: 1;
-    left: 10%; */
-    display: block;
-}
 
 .pic3{
     justify-content: flex-start;
@@ -173,13 +160,7 @@ body img{
     margin: 0 10px;
 }
 
-/* .pic2.slide-in{
-    transform: translateX(-30%);
-}
 
-.pic2.slide-in{
-    transform: translateX(0%);
-} */
 
 .middle_left{
     animation:  left 20s forwards;
@@ -408,25 +389,7 @@ body img{
     .middle_left{
         display: none;
     }
-
-    /* .ootdpiture li{
-        width: calc((100% - 20px) / 2);
-    } */
-    
     
 }
   
-@media (min-width: 992px) and (max-width: 1199.98px){
-    .htpice , .bigpic , .subemiddle , .ootdpiture{
-      width: 960px;
-    }
-
-    
-}
-  
-@media (min-width: 1200px) and (max-width: 1139.98px){
-    .htpice , .bigpic , .subemiddle{
-      width:1140px;
-    }
-}
 

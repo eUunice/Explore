@@ -98,7 +98,6 @@ main{
     background-position-x: left;
     background-attachment: fixed;
     top: 0;
-    /* position: absolute; */
     position: relative;
 }
 
@@ -147,7 +146,6 @@ main{
     background-position-x: left;
     background-attachment: fixed;
     top: 0;
-    /* position: absolute; */
     position: relative;
 }
 
