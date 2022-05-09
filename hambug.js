@@ -10,20 +10,8 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 });
 
-
-// $(".hamburger_menu").on("click",function(){
-//     $(".allnav .menu").slideToggle();
-// });
-
-$(".hamburger_menu").on("click",function(){
-    var vis = $(".item").css("visibility");
-    if(vis=="hidden")
-    {
-        $( ".item" ).css("visibility","visible");                    
-    }
-    else
-    {
-        $( ".item" ).css("visibility","hidden");                    
-    }
-
+$(".hamburger_menu").on("click", function(){
+    $(".main_nav").slideToggle();
 });
+
+

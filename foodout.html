@@ -17,26 +17,27 @@
 
     <main>
         <!---------- 主選單 ----------->
-        <nav class="allnav">
+        <div class="allnav">
             <button type="button" class="hamburger_menu">
                <span class="ham-1 ham-bar"></span>
                <span class="ham-2 ham-bar"></span>
                <span class="ham-3 ham-bar"></span>
            </button>
 
-           <ul class="menu">
-               <li class="item"><a href="money.html">LUXURY</a></li>
-       
-               <li class="item"><a href="ootd.html">OUTFIT</a></li>
-       
-               <li class="item"><a href="subscribe.html">SUBSCRIBE</a></li>
-
-               <li class="item"><a href="foodout.html">DELICACY</a></li>
-
-               <li class="item"><a href="travel.html">TRAVEL</a></li>
-               
-           </ul>
-       </nav> 
+            <nav class="main_nav">
+                <ul class="nav_list">
+                    <li class="item"><a href="money.html">LUXURY</a></li>
+            
+                    <li class="item"><a href="ootd.html">OUTFIT</a></li>
+            
+                    <li class="item"><a href="subscribe.html">SUBSCRIBE</a></li>
+    
+                    <li class="item"><a href="foodout.html">DELICACY</a></li>
+    
+                    <li class="item"><a href="travel.html">TRAVEL</a></li>
+                </ul>
+            </nav>
+        </div> 
         
         
         <nav class="foodsel">
@@ -239,16 +240,16 @@
 
     <script src="./vendors/jquery/jquery-3.6.0.min.js"></script>
     <script src="./hambug.js"></script>
-    <script>
+    <!-- <script>
         
 
         top.onclick = function(){
             var top = document.documentElement.scrollTop
             scrollBy(0,-top);
         }
-    </script>
+    </script> -->
 
-    <script>
+    <!-- <script>
         
         $(window).scroll(function(){
             if($(this).scrollTop() > 300){
@@ -258,7 +259,9 @@
                 $(".top").css("opacity". "0");
             }
         });
-    </script>
+    </script> -->
+
+  
 
 </body>
 </html>

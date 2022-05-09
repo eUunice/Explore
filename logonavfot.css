@@ -38,7 +38,7 @@ header img{
     
 }
 
-.allnav .menu{
+.allnav .main_nav{
     /* background-color: transparent;       */
     margin: 0 auto ;
     
@@ -50,16 +50,21 @@ header img{
     
 }
 
-.allnav .menu{
+/* .allnav .main_nav{
     overflow: hidden;
     transition: .2s;
+} */
+
+.allnav .main_nav > .nav_list{
+    display: flex;
+    justify-content: center;
 }
 
-.allnav .menu >li{
+.allnav .main_nav > .nav_list >li{
     position: relative;
 }
 
-.allnav .menu > li >a{
+.allnav .main_nav > .nav_list >li >a{
     text-align: center;
     color: #888098;
     line-height: 55px;
@@ -67,13 +72,13 @@ header img{
     padding: 0 10px;
 }
 
-.allnav .menu >a:hover{
+.allnav .main_nav > .nav_list > li >a:hover{
     color: burlywood;
 }
 
 
 
-.allnav .menu > li >a:after{
+.allnav .main_nav > .nav_list >li >a:after{
     content: "";
     display: block;
     width: 0%;
@@ -87,7 +92,7 @@ header img{
     right: 0;
 }
 
-.allnav .menu > li >a:hover:after{
+.allnav .main_nav > .nav_list >li >a:hover:after{
     width: 80%;
 }
 
@@ -165,9 +170,10 @@ header img{
 }
 
 @media screen and (min-width: 768px){
-    .allnav .menu{
-        /* display: block; */
+    .allnav .main_nav{
+        display: block !important;
     }
+    
 
     .hamburger_menu{
         display: none;
@@ -175,33 +181,22 @@ header img{
     
 }
 @media screen and (max-width: 767.98px) {
-    .allnav .menu > li {
-      /* display: none; */
-      /* visibility: hidden; */
-      
-        
-    }
-    /* .vis {
-      visibility: hidden;
-    } */
-    /* .hamburger_menu {
-      display: inline-block;
-    } */
-    .item {
-      visibility: hidden;
-      
+    
+    .allnav .main_nav{
+        display: none;
     }
 
-    .hamburger_menu{
-        display: block;
-    }
-
-    .allnav .menu{
-        /* flex-direction: column;
+    .allnav .main_nav > .nav_list{
+        flex-direction: column;
         height: 100vh;
-        clear: none;
-        background-color: white; */
+        background-color: white;
     }
+
+    /* .hamburger_menu{
+        display: block;
+    } */
+
+    
     
 }
 
